@@ -15,9 +15,9 @@ export default function Articles() {
   return (
     <div className="sec sec-bg" id="learn">
       <div className="sec-max">
-        <span className="ey">Education</span>
+        <span className="ey">Guides</span>
         <h2 className="sec-h">What every CA borrower should read first</h2>
-        <p className="sec-sub">The highest-traffic mortgage education topics — California-specific, no upsell.</p>
+        <p className="sec-sub">The highest-traffic mortgage guide topics — California-specific, no upsell.</p>
         <div className="art-grid">
           {ARTICLES.map((a) => (
             <a href={a.href} className="art" key={a.href}>

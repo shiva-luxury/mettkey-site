@@ -3,7 +3,7 @@ import { SITE_URL } from '../lib/constants'
 import { BLOG_POSTS } from '../lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ['', '/blog'].map((path) => ({
+  const staticRoutes = ['', '/blog', '/guide', '/market-trends'].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,

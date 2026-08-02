@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { BLOG_POSTS, getPost } from '../../../lib/blog'
 import { AGENT_NAME, BLOG_DISCLAIMER, SITE_URL } from '../../../lib/constants'
+import ShareButtons from '../../../components/ShareButtons'
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((p) => ({ slug: p.slug }))
@@ -41,7 +42,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     publisher: { '@type': 'Organization', name: 'Mettkey' },
     mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
     isFamilyFriendly: true,
-    about: 'California mortgage education',
+    about: 'California mortgage guide',
     genre: 'Educational',
   }
 
@@ -67,6 +68,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             ))}
           </div>
         )}
+
+        <ShareButtons url={`${SITE_URL}/blog/${post.slug}`} title={post.title} />
 
         <div className="blog-disclaimer">{BLOG_DISCLAIMER}</div>
       </article>

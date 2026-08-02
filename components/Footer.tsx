@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="ft-top">
         <div>
           <span className="ft-logo">Mett<span>key</span></span>
-          <p className="ft-about">California mortgage education and information resource. Helping home buyers, investors, and self-employed borrowers understand their loan options before they ever talk to a lender. We do not originate loans or take applications.</p>
+          <p className="ft-about">California mortgage guide and information resource — your portal to loan programs and market trends. Helping home buyers, investors, and self-employed borrowers understand their loan options before they ever talk to a lender. We do not originate loans or take applications.</p>
         </div>
         <div>
           <div className="ft-h">Learn</div>
@@ -16,7 +16,9 @@ export default function Footer() {
             <li><a href="/#programs">CA Programs</a></li>
             <li><a href="/#calculator">Calculator</a></li>
             <li><a href="/#learn">Articles</a></li>
-            <li><a href="/#guides">Free Playbook</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/market-trends">Market Trends</a></li>
+            <li><a href="/guide">Free Playbook</a></li>
             <li><a href="/#newsletter">Newsletter</a></li>
           </ul>
         </div>
@@ -39,7 +41,7 @@ export default function Footer() {
             <li><a href="/#learn">Self-Employed Loans</a></li>
             <li><a href="/#learn">First-Time Buyers</a></li>
             <li><a href="/#learn">Investor Guides</a></li>
-            <li><a href="/#learn">Rate Insights</a></li>
+            <li><a href="/market-trends">Rate Insights</a></li>
           </ul>
         </div>
       </div>
@@ -52,10 +54,10 @@ export default function Footer() {
           </span><br />
           Shiva T. Mettke<br />
           NMLS #2779492<br />
-          CA DRE #02251909<br />
-          © 2026 Mettkey
+          CA DRE #02251909
         </div>
       </div>
+      <div className="ft-copy">© 2026 Mettkey. All rights reserved.</div>
     </footer>
   )
 }

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { BRAND } from '../../lib/constants'
 import BlogGrid from './BlogGrid'
 
-const BLOG_INDEX_TITLE = 'Blog — California Mortgage Education'
-const BLOG_INDEX_DESCRIPTION = `Plain-English guides on California mortgage rates, loan types, and down payment programs from ${BRAND}. Educational only — not a lender.`
+const BLOG_INDEX_TITLE = 'Blog — California Mortgage Guide'
+const BLOG_INDEX_DESCRIPTION = `Plain-English guides on California mortgage rates, loan types, and down payment programs from ${BRAND}. Informational only — not a lender.`
 
 export const metadata: Metadata = {
   title: BLOG_INDEX_TITLE,
@@ -18,7 +18,7 @@ export default function BlogIndexPage() {
     <main>
       <div className="blog-hero">
         <h1>The Mettkey Blog</h1>
-        <p>Straight-talk California mortgage education — no upsell, no lender pitch.</p>
+        <p>Straight-talk California mortgage guidance — no upsell, no lender pitch.</p>
       </div>
       <div className="sec">
         <div className="sec-max">

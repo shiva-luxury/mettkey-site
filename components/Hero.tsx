@@ -3,9 +3,9 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-inner">
         <div>
-          <div className="hero-badge">📍 California Mortgage Education · NMLS #2779492</div>
+          <div className="hero-badge">📍 California Mortgage Guide · NMLS #2779492</div>
           <h1>Know your loan options <em>before</em> you call a lender</h1>
-          <p className="hero-p">Free, unbiased mortgage education for California home buyers, first-time buyers, self-employed borrowers, and investors. No sales pitch. No credit pull. Just clarity.</p>
+          <p className="hero-p">Your portal to California mortgage information and market trends — for home buyers, first-time buyers, self-employed borrowers, and investors. No sales pitch. No credit pull. Just clarity.</p>
           <div className="hero-btns">
             <a href="#guides" className="btn btn-gold btn-lg">Get the Free Playbook</a>
             <a href="#calculator" className="btn btn-outline btn-lg">Try the Calculator</a>

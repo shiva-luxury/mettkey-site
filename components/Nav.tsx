@@ -63,11 +63,12 @@ export default function Nav() {
           <div className="ni"><a href="/#calculator">Calculator</a></div>
           <div className="ni"><a href="/#programs">CA Programs</a></div>
           <div className="ni"><a href="/#learn">Learn</a></div>
+          <div className="ni"><a href="/market-trends">Market Trends</a></div>
           <div className="ni"><a href="/blog">Blog</a></div>
 
         </div>
         <div className="nav-r">
-          <a href="/#guides" className="btn btn-outline">Free Guide</a>
+          <a href="/guide" className="btn btn-outline">Free Guide</a>
           <a href="/#guides" className="btn btn-gold">Get Started</a>
         </div>
       </nav>

@@ -263,6 +263,7 @@ footer{background:var(--navy)}
 .ft-legal{font-size:.68rem;line-height:1.78;color:rgba(255,255,255,.22);max-width:680px}
 .ft-legal strong{color:rgba(255,255,255,.38)}
 .ft-nmls{font-size:.67rem;color:rgba(255,255,255,.2);text-align:right;line-height:1.9}
+.ft-copy{max-width:var(--max);margin:0 auto;padding:18px var(--pad) 26px;font-size:.72rem;color:rgba(255,255,255,.3);border-top:1px solid rgba(255,255,255,.07)}
 
 /* BLOG (new — additive, follows the same visual language as the rest of the site) */
 .blog-hero{background:var(--navy);padding:clamp(50px,7vw,80px) var(--pad);text-align:center}
@@ -288,6 +289,10 @@ footer{background:var(--navy)}
 .blog-links a{font-size:.85rem;font-weight:600;color:var(--gold-dark);background:var(--gold-light);padding:8px 14px;border-radius:20px;text-decoration:none}
 .blog-links a:hover{background:var(--gold-mid)}
 .blog-disclaimer{margin-top:40px;padding:18px 20px;background:var(--bg);border-left:3px solid var(--gold2);border-radius:var(--r);font-size:.78rem;color:var(--ink3);line-height:1.6}
+.share-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:28px 0}
+.share-lbl{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink4);margin-right:2px}
+.share-btn{font-size:.8rem;font-weight:600;color:var(--navy);background:var(--bg);border:1px solid var(--rule);padding:8px 14px;border-radius:20px;text-decoration:none;cursor:pointer;transition:all .15s;font-family:var(--fb)}
+.share-btn:hover{border-color:var(--gold2);color:var(--gold-dark);background:var(--gold-light)}
 
 /* RESPONSIVE */
 @media(max-width:960px){
