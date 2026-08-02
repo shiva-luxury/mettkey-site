@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mettkey — California Mortgage Education</title>
+<meta name="description" content="Free mortgage education for California home buyers, first-time buyers, investors, and self-employed borrowers. NMLS #2779492"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#0c1015;
+  --ink2:#3d4550;
+  --ink3:#7a8694;
+  --bg:#f8f9fb;
+  --white:#ffffff;
+  --rule:#e8ecf0;
+  --navy:#0e2040;
+  --navy2:#163360;
+  --blue:#1a5eb8;
+  --blue-light:#e8f0fb;
+  --gold:#c8922a;
+  --gold-light:#fdf5e6;
+  --gold-border:#e8c97a;
+  --green:#1a8a5a;
+  --green-light:#e8f7ef;
+  --r:8px;
+  --r2:14px;
+  --sh:0 2px 12px rgba(12,16,21,.08),0 8px 40px rgba(12,16,21,.04);
+  --sh2:0 12px 60px rgba(12,16,21,.15);
+  --max:1160px;
+  --pad:clamp(18px,5vw,60px);
+  --fb:'Manrope',system-ui,sans-serif;
+  --fd:'Playfair Display',Georgia,serif;
+}
+body{font-family:var(--fb);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ── NAV ── */
+.nav-wrap{position:sticky;top:0;z-index:200;background:var(--navy);box-shadow:0 2px 20px rgba(0,0,0,.25)}
+nav{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;height:66px;gap:8px}
+.nav-logo{font-family:var(--fd);font-size:1.45rem;color:#fff;text-decoration:none;white-space:nowrap;margin-right:8px}
+.nav-logo span{color:var(--gold)}
+.nav-tabs{display:flex;align-items:center;flex:1;gap:2px}
+.nav-tab{position:relative}
+.nav-tab>button,.nav-tab>a{background:none;border:none;color:rgba(255,255,255,.78);font-family:var(--fb);font-size:.82rem;font-weight:500;padding:8px 14px;border-radius:6px;cursor:pointer;display:flex;align-items:center;gap:5px;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
+.nav-tab>button:hover,.nav-tab>a:hover,.nav-tab.open>button{background:rgba(255,255,255,.1);color:#fff}
+.chevron{font-size:.65rem;opacity:.6;transition:transform .2s}
+.nav-tab.open .chevron{transform:rotate(180deg)}
+.dropdown{display:none;position:absolute;top:calc(100%+8px);left:0;background:var(--white);border:1px solid var(--rule);border-radius:var(--r2);box-shadow:var(--sh2);min-width:240px;padding:10px;z-index:300}
+.nav-tab.open .dropdown{display:block}
+.dropdown a{display:block;padding:9px 14px;border-radius:var(--r);font-size:.83rem;color:var(--ink2);text-decoration:none;transition:background .12s,color .12s}
+.dropdown a:hover{background:var(--blue-light);color:var(--blue)}
+.dropdown-label{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);padding:8px 14px 4px}
+.nav-right{display:flex;align-items:center;gap:10px;margin-left:auto}
+.btn-nav{padding:9px 20px;border-radius:var(--r);font-family:var(--fb);font-size:.82rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all .15s;white-space:nowrap}
+.btn-nav.outline{background:transparent;border:1.5px solid rgba(255,255,255,.35);color:rgba(255,255,255,.85)}
+.btn-nav.outline:hover{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-nav.gold{background:var(--gold);border:none;color:#fff}
+.btn-nav.gold:hover{background:#a67520}
+.hamburger{display:none;background:none;border:none;cursor:pointer;color:#fff;font-size:1.4rem;padding:4px}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:600px;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28;filter:saturate(0.6)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(14,32,64,.92) 45%,rgba(14,32,64,.4) 100%)}
+.hero-inner{position:relative;max-width:var(--max);margin:0 auto;padding:80px var(--pad);display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:center;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.35);border-radius:20px;padding:5px 14px;font-size:.75rem;font-weight:600;color:var(--gold-border);letter-spacing:.04em;margin-bottom:20px}
+.hero h1{font-family:var(--fd);font-size:clamp(2rem,4.5vw,3.4rem);color:#fff;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold-border)}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:32px;max-width:480px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-hero-primary{background:var(--gold);color:#fff;padding:14px 28px;border-radius:var(--r);font-weight:700;font-size:.92rem;text-decoration:none;transition:all .15s;display:inline-block}
+.btn-hero-primary:hover{background:#a67520;transform:translateY(-1px)}
+.btn-hero-ghost{border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.85);padding:14px 28px;border-radius:var(--r);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .15s;display:inline-block}
+.btn-hero-ghost:hover{border-color:rgba(255,255,255,.6);color:#fff}
+.hero-stats{display:flex;gap:28px;margin-top:40px;flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;gap:3px}
+.stat-n{font-family:var(--fd);font-size:1.6rem;color:#fff;line-height:1}
+.stat-l{font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.06em}
+
+/* hero card */
+.hero-card{background:var(--white);border-radius:var(--r2);padding:28px;box-shadow:var(--sh2)}
+.hero-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+.hero-card p{font-size:.8rem;color:var(--ink3);margin-bottom:18px}
+.hero-card .hc-label{font-size:.72rem;font-weight:600;color:var(--ink2);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.hc-input{width:100%;padding:10px 14px;border:1.5px solid var(--rule);border-radius:var(--r);font-family:var(--fb);font-size:.88rem;color:var(--ink);outline:none;transition:border-color .2s;margin-bottom:12px}
+.hc-input:focus{border-color:var(--blue)}
+.hc-select{width:100%;padding:10px 14px;border:1.5px solid var(--rule);border-radius:var(--r);font-family:var(--fb);font-size:.88rem;color:var(--ink);outline:none;margin-bottom:14px;background:var(--white);cursor:pointer}
+.hc-btn{width:100%;background:var(--navy);color:#fff;border:none;padding:13px;border-radius:var(--r);font-family:var(--fb);font-weight:700;font-size:.9rem;cursor:pointer;transition:background .15s}
+.hc-btn:hover{background:var(--blue)}
+.hc-legal{font-size:.68rem;color:var(--ink3);text-align:center;margin-top:10px;line-height:1.5}
+
+/* ── TRUST BAR ── */
+.trust{background:var(--white);border-bottom:1px solid var(--rule);padding:14px var(--pad)}
+.trust-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap}
+.ti{display:flex;align-items:center;gap:7px;font-size:.78rem;color:var(--ink2);font-weight:500}
+.ti-icon{font-size:1rem}
+.ti-div{width:1px;height:18px;background:var(--rule)}
+
+/* ── SECTION ── */
+.section{padding:clamp(60px,8vw,100px) var(--pad)}
+.section-max{max-width:var(--max);margin:0 auto}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.section-h{font-family:var(--fd);font-size:clamp(1.7rem,3.5vw,2.5rem);color:var(--navy);line-height:1.15;letter-spacing:-.02em;margin-bottom:14px}
+.section-sub{font-size:1rem;color:var(--ink2);line-height:1.7;max-width:580px;margin-bottom:50px}
+.divider{border:none;border-top:1px solid var(--rule)}
+
+/* ── LOAN TABS ── */
+.loan-tabs-wrap{background:var(--white)}
+.loan-tab-nav{display:flex;gap:4px;border-bottom:2px solid var(--rule);overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none}
+.loan-tab-nav::-webkit-scrollbar{display:none}
+.lt-btn{background:none;border:none;padding:14px 20px;font-family:var(--fb);font-size:.85rem;font-weight:600;color:var(--ink3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;white-space:nowrap;transition:all .15s}
+.lt-btn.active,.lt-btn:hover{color:var(--blue);border-bottom-color:var(--blue)}
+.loan-tab-content{display:none;padding:40px 0}
+.loan-tab-content.active{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.ltc-text h3{font-family:var(--fd);font-size:1.7rem;color:var(--navy);margin-bottom:12px}
+.ltc-text p{font-size:.92rem;color:var(--ink2);line-height:1.75;margin-bottom:20px}
+.ltc-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{background:var(--blue-light);color:var(--blue);font-size:.75rem;font-weight:600;padding:5px 12px;border-radius:20px}
+.chip.g{background:var(--green-light);color:var(--green)}
+.chip.o{background:var(--gold-light);color:var(--gold)}
+.ltc-facts{display:flex;flex-direction:column;gap:12px}
+.fact{display:flex;gap:12px;align-items:flex-start}
+.fact-icon{width:32px;height:32px;border-radius:50%;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;margin-top:1px}
+.fact-text strong{display:block;font-size:.88rem;color:var(--navy);margin-bottom:2px}
+.fact-text span{font-size:.8rem;color:var(--ink3);line-height:1.5}
+.ltc-img{border-radius:var(--r2);overflow:hidden;height:360px}
+.ltc-img img{width:100%;height:100%;object-fit:cover}
+
+/* ── IMAGE SECTIONS ── */
+.split-section{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0}
+.split-img{height:500px;overflow:hidden}
+.split-img img{width:100%;height:100%;object-fit:cover}
+.split-text{padding:60px clamp(30px,5vw,80px)}
+.split-text .eyebrow{color:var(--gold)}
+.split-text .section-h{margin-bottom:18px}
+.split-text p{font-size:.95rem;color:var(--ink2);line-height:1.75;margin-bottom:24px}
+
+/* ── PROGRAMS ── */
+.programs-bg{background:var(--navy)}
+.prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.prog-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r2);padding:24px;transition:background .2s,border-color .2s}
+.prog-card:hover{background:rgba(255,255,255,.1);border-color:rgba(200,146,42,.4)}
+.prog-icon{font-size:1.5rem;margin-bottom:12px}
+.prog-card h4{font-weight:700;font-size:.95rem;color:#fff;margin-bottom:8px}
+.prog-card p{font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.6}
+.prog-tag{display:inline-block;background:rgba(200,146,42,.2);color:var(--gold-border);font-size:.68rem;font-weight:600;padding:3px 9px;border-radius:12px;margin-top:10px;letter-spacing:.04em}
+
+/* ── CALC ── */
+.calc-section{background:var(--bg)}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.calc-box{background:var(--white);border-radius:var(--r2);padding:32px;box-shadow:var(--sh)}
+.calc-tabs{display:flex;gap:4px;background:var(--bg);border-radius:var(--r);padding:4px;margin-bottom:28px}
+.calc-tab-btn{flex:1;padding:9px;border:none;border-radius:6px;font-family:var(--fb);font-size:.82rem;font-weight:600;cursor:pointer;background:none;color:var(--ink3);transition:all .15s}
+.calc-tab-btn.active{background:var(--white);color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,.1)}
+.c-label{display:block;font-size:.75rem;font-weight:600;color:var(--ink2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.c-display{font-family:var(--fd);font-size:1.2rem;color:var(--navy);margin-bottom:4px}
+input[type=range]{width:100%;accent-color:var(--blue);margin-bottom:4px}
+.c-minmax{display:flex;justify-content:space-between;font-size:.68rem;color:var(--ink3);margin-bottom:22px}
+.c-select{width:100%;padding:10px 14px;border:1.5px solid var(--rule);border-radius:var(--r);font-family:var(--fb);font-size:.88rem;color:var(--ink);outline:none;margin-bottom:22px;background:var(--white)}
+.calc-result-box{background:var(--navy);border-radius:var(--r2);padding:24px;margin-top:8px}
+.crb-label{font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.crb-amount{font-family:var(--fd);font-size:2.4rem;color:#fff;line-height:1}
+.crb-note{font-size:.7rem;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.5}
+.crb-breakdown{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)}
+.crb-row{display:flex;justify-content:space-between;font-size:.78rem;padding:5px 0}
+.crb-row span:first-child{color:rgba(255,255,255,.5)}
+.crb-row span:last-child{color:#fff;font-weight:600}
+.calc-info-list{display:flex;flex-direction:column;gap:14px}
+.ci-item{background:var(--white);border-radius:var(--r);padding:18px 20px;border-left:3px solid var(--blue);box-shadow:var(--sh)}
+.ci-item strong{display:block;font-size:.88rem;color:var(--navy);margin-bottom:4px}
+.ci-item span{font-size:.8rem;color:var(--ink3);line-height:1.55}
+
+/* ── ARTICLES ── */
+.articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.art-card{background:var(--white);border-radius:var(--r2);overflow:hidden;box-shadow:var(--sh);transition:transform .2s,box-shadow .2s;text-decoration:none}
+.art-card:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.art-img{height:190px;overflow:hidden;position:relative}
+.art-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.art-card:hover .art-img img{transform:scale(1.04)}
+.art-cat{position:absolute;top:12px;left:12px;background:var(--navy);color:#fff;font-size:.68rem;font-weight:700;padding:4px 10px;border-radius:12px;letter-spacing:.04em}
+.art-body{padding:20px}
+.art-body h3{font-family:var(--fd);font-size:1.05rem;color:var(--navy);line-height:1.3;margin-bottom:8px}
+.art-body p{font-size:.8rem;color:var(--ink3);line-height:1.6}
+.art-read{margin-top:12px;font-size:.78rem;font-weight:700;color:var(--blue)}
+
+/* ── EBOOK / LEAD ── */
+.ebook-section{background:var(--white)}
+.ebook-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.ebook-visual{position:relative}
+.ebook-bg-img{border-radius:var(--r2);overflow:hidden;height:480px}
+.ebook-bg-img img{width:100%;height:100%;object-fit:cover}
+.ebook-float{position:absolute;bottom:-20px;right:-20px;background:var(--navy);border-radius:var(--r2);padding:24px;box-shadow:var(--sh2);width:260px}
+.ebook-float .ef-eye{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-border);margin-bottom:10px}
+.ebook-float h4{font-family:var(--fd);font-size:1.1rem;color:#fff;margin-bottom:14px;line-height:1.3}
+.ebook-float ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.ebook-float li{font-size:.78rem;color:rgba(255,255,255,.65);display:flex;align-items:flex-start;gap:8px;line-height:1.45}
+.ebook-float li::before{content:"✓";color:var(--gold-border);font-weight:700;flex-shrink:0;margin-top:1px}
+.ebook-form-side{}
+.ef-head{font-family:var(--fd);font-size:2rem;color:var(--navy);line-height:1.15;margin-bottom:12px}
+.ef-sub{font-size:.95rem;color:var(--ink2);line-height:1.7;margin-bottom:28px}
+.form-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.f-field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.f-field label{font-size:.75rem;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em}
+.f-field input,.f-field select{padding:11px 14px;border:1.5px solid var(--rule);border-radius:var(--r);font-family:var(--fb);font-size:.9rem;color:var(--ink);outline:none;transition:border-color .2s;background:var(--bg)}
+.f-field input:focus,.f-field select:focus{border-color:var(--blue)}
+.f-submit{width:100%;background:var(--navy);color:#fff;border:none;padding:14px;border-radius:var(--r);font-family:var(--fb);font-size:.92rem;font-weight:700;cursor:pointer;margin-top:4px;transition:background .15s}
+.f-submit:hover{background:var(--blue)}
+.f-legal{font-size:.69rem;color:var(--ink3);line-height:1.5;margin-top:10px}
+.f-success{display:none;background:var(--green-light);border:1px solid var(--green);border-radius:var(--r);padding:18px;text-align:center;color:var(--green);font-size:.88rem;line-height:1.6}
+
+/* ── NEWSLETTER ── */
+.nl-section{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);padding:clamp(60px,8vw,90px) var(--pad)}
+.nl-inner{max-width:680px;margin:0 auto;text-align:center}
+.nl-inner .eyebrow{color:var(--gold-border)}
+.nl-h{font-family:var(--fd);font-size:clamp(1.8rem,3.5vw,2.4rem);color:#fff;margin-bottom:14px}
+.nl-sub{color:rgba(255,255,255,.65);font-size:1rem;line-height:1.7;margin-bottom:36px}
+.nl-form{display:flex;gap:10px;max-width:480px;margin:0 auto 12px}
+.nl-input{flex:1;padding:13px 16px;border:1.5px solid rgba(255,255,255,.2);border-radius:var(--r);background:rgba(255,255,255,.08);color:#fff;font-family:var(--fb);font-size:.9rem;outline:none}
+.nl-input::placeholder{color:rgba(255,255,255,.35)}
+.nl-input:focus{border-color:var(--gold-border)}
+.nl-btn{background:var(--gold);color:#fff;border:none;padding:13px 22px;border-radius:var(--r);font-family:var(--fb);font-weight:700;font-size:.88rem;cursor:pointer;white-space:nowrap;transition:background .15s}
+.nl-btn:hover{background:#a67520}
+.nl-note{font-size:.72rem;color:rgba(255,255,255,.3)}
+.nl-ok{display:none;color:var(--gold-border);font-size:.88rem;margin-top:10px}
+
+/* ── POPUP ── */
+.popup-overlay{display:none;position:fixed;inset:0;background:rgba(12,16,21,.65);z-index:1000;backdrop-filter:blur(4px);align-items:center;justify-content:center}
+.popup-overlay.show{display:flex}
+.popup-box{background:var(--white);border-radius:var(--r2);max-width:520px;width:90%;overflow:hidden;box-shadow:var(--sh2);animation:popIn .3s ease}
+@keyframes popIn{from{opacity:0;transform:scale(.94) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.popup-img{height:180px;overflow:hidden;position:relative}
+.popup-img img{width:100%;height:100%;object-fit:cover}
+.popup-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(14,32,64,.8))}
+.popup-img-text{position:absolute;bottom:16px;left:20px;right:20px;color:#fff}
+.popup-img-text h3{font-family:var(--fd);font-size:1.4rem;line-height:1.2}
+.popup-img-text p{font-size:.78rem;color:rgba(255,255,255,.7);margin-top:4px}
+.popup-body{padding:24px 28px 28px}
+.popup-body p{font-size:.88rem;color:var(--ink2);margin-bottom:18px;line-height:1.6}
+.popup-form{display:flex;flex-direction:column;gap:10px}
+.popup-form input{padding:11px 14px;border:1.5px solid var(--rule);border-radius:var(--r);font-family:var(--fb);font-size:.9rem;outline:none;transition:border-color .2s}
+.popup-form input:focus{border-color:var(--blue)}
+.popup-form button{background:var(--navy);color:#fff;border:none;padding:13px;border-radius:var(--r);font-family:var(--fb);font-weight:700;font-size:.9rem;cursor:pointer;transition:background .15s}
+.popup-form button:hover{background:var(--blue)}
+.popup-close{position:absolute;top:12px;right:16px;background:rgba(255,255,255,.2);border:none;color:#fff;font-size:1.1rem;width:28px;height:28px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.popup-close:hover{background:rgba(255,255,255,.35)}
+.popup-img{position:relative}
+.popup-skip{text-align:center;margin-top:10px;font-size:.75rem;color:var(--ink3);cursor:pointer;text-decoration:underline}
+
+/* ── FOOTER ── */
+footer{background:#07111f;color:rgba(255,255,255,.4);padding:60px var(--pad) 36px}
+.footer-max{max-width:var(--max);margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.07)}
+.fb-logo{font-family:var(--fd);font-size:1.4rem;color:#fff;display:block;margin-bottom:12px}
+.fb-logo span{color:var(--gold)}
+.fb-about{font-size:.8rem;line-height:1.7;color:rgba(255,255,255,.38);max-width:320px}
+.fc-head{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-border);margin-bottom:14px}
+.fc-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.fc-links a{font-size:.8rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .15s}
+.fc-links a:hover{color:rgba(255,255,255,.8)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+.fb-legal{font-size:.7rem;line-height:1.75;color:rgba(255,255,255,.25);max-width:680px}
+.fb-legal strong{color:rgba(255,255,255,.4)}
+.fb-nmls{font-size:.68rem;color:rgba(255,255,255,.2);text-align:right;line-height:1.8}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .loan-tab-content.active{grid-template-columns:1fr}
+  .ltc-img{display:none}
+  .split-section{grid-template-columns:1fr}
+  .split-img{height:280px}
+  .calc-grid{grid-template-columns:1fr}
+  .ebook-grid{grid-template-columns:1fr}
+  .ebook-float{position:static;margin-top:16px;width:100%}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .footer-bottom{flex-direction:column}
+  .nav-tabs{display:none}
+  .hamburger{display:flex}
+  .form-2col{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+}
+@media(max-width:600px){
+  .footer-top{grid-template-columns:1fr}
+  .hero-stats{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- POPUP -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <div class="popup-img">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80&auto=format&fit=crop" alt="California home"/>
+      <div class="popup-img-overlay"></div>
+      <div class="popup-img-text">
+        <h3>Free: CA Loan Playbook 2026</h3>
+        <p>42 pages · instant download · no strings</p>
+      </div>
+      <button class="popup-close" onclick="closePopup()">✕</button>
+    </div>
+    <div class="popup-body">
+      <p>Before you go — get the free guide thousands of California buyers use to understand their loan options before talking to a lender.</p>
+      <div class="popup-form" id="popupForm">
+        <input type="text" placeholder="First name" required/>
+        <input type="email" placeholder="Email address" required/>
+        <button onclick="submitPopup()">Send Me the Free Guide →</button>
+      </div>
+      <div id="popupSuccess" style="display:none;text-align:center;padding:12px;color:var(--green);font-weight:600;font-size:.9rem;">✓ On its way to your inbox!</div>
+      <p class="popup-skip" onclick="closePopup()">No thanks, I'll figure it out on my own</p>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <nav>
+    <a href="#" class="nav-logo">Mett<span>key</span></a>
+    <div class="nav-tabs">
+
+      <div class="nav-tab" id="tab-buy">
+        <button onclick="toggleTab('buy')">Buy a Home <span class="chevron">▾</span></button>
+        <div class="dropdown">
+          <div class="dropdown-label">Loan Types</div>
+          <a href="#loans" onclick="showLoan('conventional');closeAllTabs()">Conventional Loans</a>
+          <a href="#loans" onclick="showLoan('fha');closeAllTabs()">FHA Loans</a>
+          <a href="#loans" onclick="showLoan('va');closeAllTabs()">VA Loans</a>
+          <a href="#loans" onclick="showLoan('jumbo');closeAllTabs()">Jumbo Loans</a>
+          <div class="dropdown-label">Resources</div>
+          <a href="#programs" onclick="closeAllTabs()">CA Down Payment Programs</a>
+          <a href="#calculator" onclick="closeAllTabs()">Affordability Calculator</a>
+        </div>
+      </div>
+
+      <div class="nav-tab" id="tab-invest">
+        <button onclick="toggleTab('invest')">Investors <span class="chevron">▾</span></button>
+        <div class="dropdown">
+          <a href="#loans" onclick="showLoan('dscr');closeAllTabs()">DSCR Loans</a>
+          <a href="#loans" onclick="showLoan('bankstmt');closeAllTabs()">Bank Statement Loans</a>
+          <a href="#learn" onclick="closeAllTabs()">Investor Guides</a>
+        </div>
+      </div>
+
+      <div class="nav-tab" id="tab-refi">
+        <button onclick="toggleTab('refi')">Refinance <span class="chevron">▾</span></button>
+        <div class="dropdown">
+          <a href="#loans" onclick="showLoan('cashout');closeAllTabs()">Cash-Out Refinance</a>
+          <a href="#calculator" onclick="closeAllTabs()">Refi Calculator</a>
+          <a href="#learn" onclick="closeAllTabs()">When to Refinance</a>
+        </div>
+      </div>
+
+      <div class="nav-tab" id="tab-calc">
+        <a href="#calculator" class="btn" onclick="closeAllTabs()">Calculator</a>
+      </div>
+
+      <div class="nav-tab" id="tab-programs">
+        <a href="#programs" onclick="closeAllTabs()">CA Programs</a>
+      </div>
+
+      <div class="nav-tab" id="tab-learn">
+        <a href="#learn" onclick="closeAllTabs()">Learn</a>
+      </div>
+
+    </div>
+    <div class="nav-right">
+      <a href="#guides" class="btn-nav outline">Free Guide</a>
+      <a href="#guides" class="btn-nav gold">Get Started</a>
+    </div>
+    <button class="hamburger">☰</button>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80&auto=format&fit=crop" alt="California home"/>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">📍 California Mortgage Education — NMLS #2779492</div>
+      <h1>Know your loan options <em>before</em> you ever call a lender</h1>
+      <p class="hero-sub">Free, unbiased mortgage education for California home buyers, first-time buyers, investors, and self-employed borrowers. No sales pitch. No credit pull.</p>
+      <div class="hero-actions">
+        <a href="#guides" class="btn-hero-primary">Get the Free Guide</a>
+        <a href="#calculator" class="btn-hero-ghost">Try the Calculator →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">9</span><span class="stat-l">Loan Types Covered</span></div>
+        <div class="stat"><span class="stat-n">6+</span><span class="stat-l">CA Programs Explained</span></div>
+        <div class="stat"><span class="stat-n">42pg</span><span class="stat-l">Free Playbook</span></div>
+        <div class="stat"><span class="stat-n">100%</span><span class="stat-l">No Cost, No Catch</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>What are you looking to do?</h3>
+      <p>Get matched with the right loan type for your situation.</p>
+      <div class="hc-label">I want to...</div>
+      <select class="hc-select" id="heroGoal">
+        <option value="">Select your goal</option>
+        <option>Buy my first home</option>
+        <option>Buy as an investor (DSCR / rental)</option>
+        <option>Refinance my current home</option>
+        <option>Take cash out of my equity</option>
+        <option>Buy a luxury or jumbo property</option>
+        <option>I'm self-employed and need options</option>
+      </select>
+      <div class="hc-label">Your name</div>
+      <input class="hc-input" type="text" placeholder="First name" id="heroName"/>
+      <div class="hc-label">Email</div>
+      <input class="hc-input" type="email" placeholder="you@email.com" id="heroEmail"/>
+      <button class="hc-btn" onclick="submitHero()">Send Me the Free Guide →</button>
+      <p class="hc-legal">No lender calls. No credit pull. Educational resource only.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-inner">
+    <div class="ti"><span class="ti-icon">🏛️</span>NMLS #2779492</div>
+    <div class="ti-div"></div>
+    <div class="ti"><span class="ti-icon">📋</span>CA DRE #02251909</div>
+    <div class="ti-div"></div>
+    <div class="ti"><span class="ti-icon">🎓</span>Educational Resource — Not a Lender</div>
+    <div class="ti-div"></div>
+    <div class="ti"><span class="ti-icon">🔒</span>No Credit Pull Required</div>
+    <div class="ti-div"></div>
+    <div class="ti"><span class="ti-icon">🏠</span>California Focused</div>
+  </div>
+</div>
+
+<!-- LOAN TYPES TABS -->
+<div class="loan-tabs-wrap" id="loans">
+  <div class="section-max" style="padding:60px var(--pad) 80px">
+    <div class="eyebrow">Loan Types Explained</div>
+    <h2 class="section-h">Every California loan type — plain English</h2>
+    <div class="loan-tab-nav">
+      <button class="lt-btn active" onclick="showLoan('conventional')">Conventional</button>
+      <button class="lt-btn" onclick="showLoan('fha')">FHA</button>
+      <button class="lt-btn" onclick="showLoan('va')">VA</button>
+      <button class="lt-btn" onclick="showLoan('jumbo')">Jumbo</button>
+      <button class="lt-btn" onclick="showLoan('bankstmt')">Bank Statement</button>
+      <button class="lt-btn" onclick="showLoan('dscr')">DSCR / Investor</button>
+      <button class="lt-btn" onclick="showLoan('cashout')">Cash-Out Refi</button>
+      <button class="lt-btn" onclick="showLoan('calhfa')">CalHFA</button>
+    </div>
+
+    <div id="loan-conventional" class="loan-tab-content active">
+      <div class="ltc-text">
+        <h3>Conventional Loan</h3>
+        <p>The most common loan in California. Ideal for borrowers with solid credit and stable W-2 income. Conforming limit in most CA counties is $766,550 — higher in LA, SF, and Orange County. Once you hit 20% equity, PMI is removed automatically.</p>
+        <div class="ltc-chips">
+          <span class="chip">Min 620 Credit Score</span>
+          <span class="chip">3–20% Down</span>
+          <span class="chip g">Best Rates Available</span>
+          <span class="chip o">PMI Removable at 20%</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">💡</div><div class="fact-text"><strong>Who it's best for</strong><span>W-2 employees with 620+ credit, stable income, and savings for a down payment.</span></div></div>
+          <div class="fact"><div class="fact-icon">⚠️</div><div class="fact-text"><strong>Watch out for</strong><span>Self-employed borrowers with large write-offs may be better served by a bank statement loan — conventional uses adjusted gross income from tax returns.</span></div></div>
+          <div class="fact"><div class="fact-icon">📊</div><div class="fact-text"><strong>CA Conforming Limit 2026</strong><span>$766,550 baseline. High-cost counties (LA, SF, OC) up to $1,149,825. Above that is jumbo territory.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=80&auto=format&fit=crop" alt="California home"/></div>
+    </div>
+
+    <div id="loan-fha" class="loan-tab-content">
+      <div class="ltc-text">
+        <h3>FHA Loan</h3>
+        <p>Government-backed with flexible credit requirements — the go-to for first-time buyers with limited savings. FHA MIP (mortgage insurance) is required for the life of the loan if you put less than 10% down, so factor that into your long-term math.</p>
+        <div class="ltc-chips">
+          <span class="chip">Min 580 Credit Score</span>
+          <span class="chip">3.5% Down</span>
+          <span class="chip g">First-Time Buyers</span>
+          <span class="chip o">Flexible Underwriting</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">💡</div><div class="fact-text"><strong>Who it's best for</strong><span>First-time buyers with 580–680 credit and limited savings for a down payment.</span></div></div>
+          <div class="fact"><div class="fact-icon">⚠️</div><div class="fact-text"><strong>The MIP trap</strong><span>FHA MIP doesn't auto-cancel. If you put less than 10% down, you pay MIP for the life of the loan. A refi to conventional is often the exit strategy once you hit 20% equity.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&auto=format&fit=crop" alt="Family home"/></div>
+    </div>
+
+    <div id="loan-va" class="loan-tab-content">
+      <div class="ltc-text">
+        <h3>VA Loan</h3>
+        <p>One of the most powerful mortgage benefits available. Zero down payment, no monthly mortgage insurance, and competitive rates — for active duty, veterans, and eligible surviving spouses. California has one of the highest VA loan volume states in the country.</p>
+        <div class="ltc-chips">
+          <span class="chip">0% Down Payment</span>
+          <span class="chip g">No PMI Ever</span>
+          <span class="chip">Military / Veterans Only</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">🎖️</div><div class="fact-text"><strong>Eligibility</strong><span>Active duty (90 days wartime / 181 peacetime), veterans, National Guard (6 yrs+), and surviving spouses. Get a COE from VA.gov first.</span></div></div>
+          <div class="fact"><div class="fact-icon">💡</div><div class="fact-text"><strong>VA Funding Fee</strong><span>Replaces PMI — a one-time fee (1.25–3.3% of loan) that can be rolled into the loan. Waived for veterans with service-connected disabilities.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80&auto=format&fit=crop" alt="Beautiful home"/></div>
+    </div>
+
+    <div id="loan-jumbo" class="loan-tab-content">
+      <div class="ltc-text">
+        <h3>Jumbo Loan</h3>
+        <p>For California's luxury market. Any loan above the conforming limit — $766,550 in most counties, up to $1.15M in high-cost areas like LA — is a jumbo. Stricter reserves and credit requirements, but essential for most Westside, Malibu, and coastal purchases.</p>
+        <div class="ltc-chips">
+          <span class="chip">$766K+ Loan Amount</span>
+          <span class="chip">Min 700 Credit</span>
+          <span class="chip o">12 Mo Reserves Typical</span>
+          <span class="chip">LA / Coastal Markets</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">💡</div><div class="fact-text"><strong>Key difference</strong><span>Jumbo lenders set their own guidelines — not Fannie/Freddie backed. Expect 10–20% down, 700+ credit, and 12 months reserves minimum.</span></div></div>
+          <div class="fact"><div class="fact-icon">📍</div><div class="fact-text"><strong>CA High-Cost Limits</strong><span>LA, Orange, SF, and San Mateo counties have higher conforming limits (up to $1,149,825). Above that is non-conforming jumbo territory.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=700&q=80&auto=format&fit=crop" alt="Luxury home"/></div>
+    </div>
+
+    <div id="loan-bankstmt" class="loan-tab-content">
+      <div class="ltc-text">
+        <h3>Bank Statement Loan</h3>
+        <p>Built for self-employed borrowers whose tax returns don't reflect real income due to legitimate write-offs. Qualify using 12–24 months of personal or business bank statements. Extremely common in LA's entrepreneur, creative, and entertainment industries.</p>
+        <div class="ltc-chips">
+          <span class="chip">Self-Employed</span>
+          <span class="chip o">No Tax Returns</span>
+          <span class="chip">Non-QM Product</span>
+          <span class="chip g">12–24 Mo Statements</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">💼</div><div class="fact-text"><strong>How it works</strong><span>Lenders average deposits over 12–24 months (sometimes applying an expense ratio for business accounts) to arrive at qualifying income. No Schedule C required.</span></div></div>
+          <div class="fact"><div class="fact-icon">⚠️</div><div class="fact-text"><strong>Rate premium</strong><span>Expect 0.5–1.5% higher rates than conventional as a tradeoff for income flexibility. Still very competitive vs. not qualifying at all.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80&auto=format&fit=crop" alt="Professional working"/></div>
+    </div>
+
+    <div id="loan-dscr" class="loan-tab-content">
+      <div class="ltc-text">
+        <h3>DSCR / Investor Loan</h3>
+        <p>Debt Service Coverage Ratio loans let real estate investors qualify based on the property's rental income — not personal income. No W-2, no tax returns, no personal income verification. The property pays for itself on paper, and that's what counts.</p>
+        <div class="ltc-chips">
+          <span class="chip">Real Estate Investors</span>
+          <span class="chip g">Rental Income Qualifies</span>
+          <span class="chip o">No W-2 Needed</span>
+          <span class="chip">Portfolio Building</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">📊</div><div class="fact-text"><strong>The DSCR formula</strong><span>Gross rental income ÷ PITIA (principal, interest, taxes, insurance, HOA). A DSCR of 1.0+ means the property covers its costs. Most lenders want 1.1–1.25+.</span></div></div>
+          <div class="fact"><div class="fact-icon">💡</div><div class="fact-text"><strong>CA investor use case</strong><span>Ideal for building a rental portfolio in markets like the Inland Empire, San Fernando Valley, or Long Beach where cash flow math still works.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80&auto=format&fit=crop" alt="Investment property"/></div>
+    </div>
+
+    <div id="loan-cashout" class="loan-tab-content">
+      <div class="ltc-text">
+        <h3>Cash-Out Refinance</h3>
+        <p>Tap your existing home equity by refinancing into a larger loan. Use proceeds for renovations, down payments on investment properties, debt consolidation, or anything else. California's appreciation has left many homeowners with massive untapped equity.</p>
+        <div class="ltc-chips">
+          <span class="chip">Tap Home Equity</span>
+          <span class="chip">Refi + Cash</span>
+          <span class="chip o">Max 80% LTV Typical</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">💡</div><div class="fact-text"><strong>Break-even math matters</strong><span>A cash-out refi replaces your existing rate. If current rates are higher than your original rate, model the full cost — not just the cash you receive.</span></div></div>
+          <div class="fact"><div class="fact-icon">🏡</div><div class="fact-text"><strong>HELOC alternative</strong><span>A HELOC (Home Equity Line of Credit) lets you tap equity without replacing your first mortgage rate. Often smarter in a high-rate environment.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80&auto=format&fit=crop" alt="Home renovation"/></div>
+    </div>
+
+    <div id="loan-calhfa" class="loan-tab-content">
+      <div class="ltc-text">
+        <h3>CalHFA Loans</h3>
+        <p>The California Housing Finance Agency offers state-backed programs specifically for first-time buyers — most with income and purchase price limits. Stacking CalHFA with FHA or conventional gets you below-market rates plus down payment assistance in one package.</p>
+        <div class="ltc-chips">
+          <span class="chip">First-Time Buyers</span>
+          <span class="chip g">Down Payment Assistance</span>
+          <span class="chip o">Income Limits Apply</span>
+          <span class="chip">CA Residents Only</span>
+        </div>
+        <div class="ltc-facts">
+          <div class="fact"><div class="fact-icon">🏦</div><div class="fact-text"><strong>MyHome Assistance</strong><span>Deferred-payment junior loan for up to 3.5% of purchase price. No monthly payment — repaid when you sell or refinance.</span></div></div>
+          <div class="fact"><div class="fact-icon">🔑</div><div class="fact-text"><strong>Dream For All</strong><span>Shared appreciation loan covering 20% down. State shares in future appreciation. Waitlists fill fast — check availability at calhfa.ca.gov.</span></div></div>
+        </div>
+      </div>
+      <div class="ltc-img"><img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=700&q=80&auto=format&fit=crop" alt="First home keys"/></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SPLIT IMAGE SECTION 1 -->
+<div class="split-section">
+  <div class="split-img">
+    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80&auto=format&fit=crop" alt="California living"/>
+  </div>
+  <div class="split-text">
+    <div class="eyebrow">Self-Employed Borrowers</div>
+    <h2 class="section-h">Your tax returns say one thing. Your bank account says another.</h2>
+    <p>California has more self-employed workers, freelancers, and business owners than nearly any other state. The traditional mortgage system is built for W-2 earners — it penalizes the write-offs that make running a business smart.</p>
+    <p>Bank statement loans were built for exactly this situation. Qualify on what you actually earn — not what your tax returns show after every deduction.</p>
+    <a href="#guides" class="btn-hero-primary" style="background:var(--navy)">Get the Self-Employed Guide →</a>
+  </div>
+</div>
+
+<!-- CA PROGRAMS -->
+<div class="programs-bg" id="programs">
+  <div class="section-max" style="padding:clamp(60px,8vw,100px) var(--pad)">
+    <div class="eyebrow" style="color:var(--gold-border)">California-Specific</div>
+    <h2 class="section-h" style="color:#fff">Down payment programs most buyers don't know exist</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,.6);margin-bottom:40px">California has some of the strongest first-time buyer assistance in the country. Most people don't qualify check — they just assume they don't.</p>
+    <div class="prog-grid">
+      <div class="prog-card">
+        <div class="prog-icon">🏦</div>
+        <h4>CalHFA MyHome Assistance</h4>
+        <p>Deferred-payment junior loan up to 3.5% of purchase price. No monthly payment added — repaid only when you sell or refinance.</p>
+        <span class="prog-tag">Zero Monthly Cost</span>
+      </div>
+      <div class="prog-card">
+        <div class="prog-icon">🎓</div>
+        <h4>CalHFA ZIP Program</h4>
+        <p>Zero-Interest Program covering closing costs. Must pair with a CalPLUS first mortgage. Fully deferred, no interest, no monthly payment.</p>
+        <span class="prog-tag">No Interest Ever</span>
+      </div>
+      <div class="prog-card">
+        <div class="prog-icon">🔑</div>
+        <h4>California Dream For All</h4>
+        <p>Shared appreciation loan covering 20% down. State receives a portion of future appreciation when you sell. Designed for first-gen buyers.</p>
+        <span class="prog-tag">20% Down Covered</span>
+      </div>
+      <div class="prog-card">
+        <div class="prog-icon">📚</div>
+        <h4>Extra Credit Teacher Home</h4>
+        <p>For K-12 teachers, administrators, and classified staff in high-priority CA schools. Below-market rates plus down payment assistance.</p>
+        <span class="prog-tag">Education Professionals</span>
+      </div>
+      <div class="prog-card">
+        <div class="prog-icon">🎖️</div>
+        <h4>CalVet Home Loans</h4>
+        <p>California's own veteran loan program — separate and stackable with VA benefits. Competitive fixed rates with additional state protections.</p>
+        <span class="prog-tag">Veterans Only</span>
+      </div>
+      <div class="prog-card">
+        <div class="prog-icon">🌆</div>
+        <h4>LACDA (LA County DPA)</h4>
+        <p>Los Angeles County's own down payment assistance for qualifying buyers in unincorporated areas. Income limits apply — worth checking if buying in the Valley or East LA.</p>
+        <span class="prog-tag">LA County Specific</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CALCULATOR -->
+<div class="section calc-section" id="calculator">
+  <div class="section-max">
+    <div class="eyebrow">Tools</div>
+    <h2 class="section-h">See your real numbers before you apply</h2>
+    <p class="section-sub">Estimate payment, affordability, and more. Adjust below.</p>
+    <div class="calc-grid">
+      <div class="calc-box">
+        <div class="calc-tabs">
+          <button class="calc-tab-btn active" onclick="switchCalc('payment',this)">Monthly Payment</button>
+          <button class="calc-tab-btn" onclick="switchCalc('afford',this)">Affordability</button>
+        </div>
+
+        <!-- Payment Tab -->
+        <div id="calc-payment">
+          <label class="c-label">Home Price</label>
+          <div class="c-display" id="disp-price">$850,000</div>
+          <input type="range" min="300000" max="3000000" step="25000" value="850000" id="sl-price" oninput="calcPayment()"/>
+          <div class="c-minmax"><span>$300K</span><span>$3M</span></div>
+
+          <label class="c-label">Down Payment</label>
+          <div class="c-display" id="disp-down">20% — $170,000</div>
+          <input type="range" min="3" max="40" step="1" value="20" id="sl-down" oninput="calcPayment()"/>
+          <div class="c-minmax"><span>3%</span><span>40%</span></div>
+
+          <label class="c-label">Interest Rate</label>
+          <div class="c-display" id="disp-rate">6.62%</div>
+          <input type="range" min="4.0" max="10.0" step="0.05" value="6.62" id="sl-rate" oninput="calcPayment()"/>
+          <div class="c-minmax"><span>4.0%</span><span>10.0%</span></div>
+
+          <label class="c-label">Loan Term</label>
+          <select class="c-select" id="sl-term" onchange="calcPayment()">
+            <option value="30">30 Years</option>
+            <option value="20">20 Years</option>
+            <option value="15">15 Years</option>
+            <option value="10">10 Years</option>
+          </select>
+
+          <div class="calc-result-box">
+            <div class="crb-label">Estimated Monthly Payment (P&amp;I)</div>
+            <div class="crb-amount" id="result-payment">$4,396</div>
+            <div class="crb-breakdown">
+              <div class="crb-row"><span>Loan Amount</span><span id="r-loan">$680,000</span></div>
+              <div class="crb-row"><span>Down Payment</span><span id="r-down-amt">$170,000</span></div>
+              <div class="crb-row"><span>Est. Property Tax/mo</span><span id="r-tax">$781</span></div>
+              <div class="crb-row"><span>Est. Total Monthly</span><span id="r-total">~$5,177</span></div>
+            </div>
+            <div class="crb-note">P&I only. Actual costs include tax, insurance, HOA. For informational use only.</div>
+          </div>
+        </div>
+
+        <!-- Affordability Tab -->
+        <div id="calc-afford" style="display:none">
+          <label class="c-label">Annual Household Income</label>
+          <div class="c-display" id="disp-income">$150,000</div>
+          <input type="range" min="40000" max="600000" step="5000" value="150000" id="sl-income" oninput="calcAfford()"/>
+          <div class="c-minmax"><span>$40K</span><span>$600K</span></div>
+
+          <label class="c-label">Monthly Debts (car, student loans, etc.)</label>
+          <div class="c-display" id="disp-debts">$500/mo</div>
+          <input type="range" min="0" max="5000" step="50" value="500" id="sl-debts" oninput="calcAfford()"/>
+          <div class="c-minmax"><span>$0</span><span>$5,000</span></div>
+
+          <label class="c-label">Down Payment Available</label>
+          <div class="c-display" id="disp-dp">$100,000</div>
+          <input type="range" min="10000" max="500000" step="5000" value="100000" id="sl-dp" oninput="calcAfford()"/>
+          <div class="c-minmax"><span>$10K</span><span>$500K</span></div>
+
+          <label class="c-label">Est. Interest Rate</label>
+          <div class="c-display" id="disp-rate2">6.62%</div>
+          <input type="range" min="4.0" max="10.0" step="0.05" value="6.62" id="sl-rate2" oninput="calcAfford()"/>
+          <div class="c-minmax"><span>4.0%</span><span>10.0%</span></div>
+
+          <div class="calc-result-box">
+            <div class="crb-label">Estimated Max Home Price</div>
+            <div class="crb-amount" id="result-afford">$620,000</div>
+            <div class="crb-breakdown">
+              <div class="crb-row"><span>Max Loan (43% DTI)</span><span id="ra-loan">$520,000</span></div>
+              <div class="crb-row"><span>Max Monthly P&I</span><span id="ra-piti">$3,340</span></div>
+              <div class="crb-row"><span>Income Used</span><span id="ra-income">$150,000/yr</span></div>
+            </div>
+            <div class="crb-note">Based on 43% DTI. Actual approval depends on credit, reserves, and lender guidelines.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-info-list">
+        <div class="ci-item"><strong>What is DTI?</strong><span>Debt-to-Income ratio: total monthly debts ÷ gross monthly income. Most lenders cap at 43–50%. Self-employed: bank statement loans use a different calculation.</span></div>
+        <div class="ci-item"><strong>CA Conforming Limits (2026)</strong><span>$766,550 baseline. High-cost counties (LA, SF, OC) up to $1,149,825. Above that = jumbo loan, different rules apply.</span></div>
+        <div class="ci-item"><strong>PMI — When You Pay It</strong><span>Conventional loans under 20% down require PMI (~0.5–1.5%/yr). FHA has MIP for life of loan if under 10% down. VA and USDA have no PMI.</span></div>
+        <div class="ci-item"><strong>Property Tax in CA</strong><span>Prop 13 caps increases at 1% of purchase price + up to 2%/yr. Estimate 1.1–1.25% of purchase price annually for most LA/Valley properties.</span></div>
+        <div class="ci-item"><strong>Rate Lock Strategy</strong><span>Rates change daily. Once in contract, most lenders offer 30–60 day locks. Some offer float-down options if rates drop. Knowing when to lock is one of the most valuable decisions in the process.</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SPLIT IMAGE SECTION 2 -->
+<div class="split-section">
+  <div class="split-text" style="background:var(--navy)">
+    <div class="eyebrow" style="color:var(--gold-border)">Real Estate Investors</div>
+    <h2 class="section-h" style="color:#fff">Build your CA rental portfolio without W-2 income</h2>
+    <p style="color:rgba(255,255,255,.65)">DSCR loans let the property qualify itself. If the rent covers the mortgage — you qualify. No personal income docs, no tax return drama. It's how serious CA investors keep scaling.</p>
+    <p style="color:rgba(255,255,255,.65)">Markets like the Inland Empire, San Fernando Valley, and Long Beach still pencil for cash flow. Know your DSCR before you make an offer.</p>
+    <a href="#loans" onclick="showLoan('dscr')" class="btn-hero-primary">Learn About DSCR Loans →</a>
+  </div>
+  <div class="split-img">
+    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80&auto=format&fit=crop" alt="Investment property California"/>
+  </div>
+</div>
+
+<!-- ARTICLES -->
+<div class="section" id="learn" style="background:var(--bg)">
+  <div class="section-max">
+    <div class="eyebrow">Education</div>
+    <h2 class="section-h">What every CA borrower should read first</h2>
+    <p class="section-sub">The highest-traffic mortgage education topics — California-specific, no upsell.</p>
+    <div class="articles-grid">
+      <a href="#guides" class="art-card">
+        <div class="art-img">
+          <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=600&q=80&auto=format&fit=crop" alt="Rates"/>
+          <div class="art-cat">RATES</div>
+        </div>
+        <div class="art-body">
+          <h3>CA Mortgage Rates 2026: What's Actually Moving Them</h3>
+          <p>The 10-year Treasury, Fed policy, and your credit score all pull in different directions. Here's how they interact in today's market.</p>
+          <div class="art-read">Read Guide →</div>
+        </div>
+      </a>
+      <a href="#loans" onclick="showLoan('bankstmt')" class="art-card">
+        <div class="art-img">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80&auto=format&fit=crop" alt="Self-employed"/>
+          <div class="art-cat">SELF-EMPLOYED</div>
+        </div>
+        <div class="art-body">
+          <h3>Bank Statement Loans: The Self-Employed Borrower's Playbook</h3>
+          <p>Write-offs reduce your taxes and kill your mortgage qualification. Bank statement loans fix that. Here's exactly how they work.</p>
+          <div class="art-read">Read Guide →</div>
+        </div>
+      </a>
+      <a href="#programs" class="art-card">
+        <div class="art-img">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80&auto=format&fit=crop" alt="First home"/>
+          <div class="art-cat">FIRST-TIME BUYERS</div>
+        </div>
+        <div class="art-body">
+          <h3>How to Buy a Home in LA With Less Than 10% Down</h3>
+          <p>CalHFA, FHA, and conventional options compared side-by-side. Real numbers on a $750K purchase — what each path actually costs monthly.</p>
+          <div class="art-read">Read Guide →</div>
+        </div>
+      </a>
+      <a href="#loans" onclick="showLoan('dscr')" class="art-card">
+        <div class="art-img">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80&auto=format&fit=crop" alt="Investment"/>
+          <div class="art-cat">INVESTORS</div>
+        </div>
+        <div class="art-body">
+          <h3>DSCR Loans Explained: Qualify on Rent, Not W-2 Income</h3>
+          <p>If you're building a rental portfolio in California, DSCR loans let the property do the qualifying. Here's the math lenders use.</p>
+          <div class="art-read">Read Guide →</div>
+        </div>
+      </a>
+      <a href="#calculator" class="art-card">
+        <div class="art-img">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80&auto=format&fit=crop" alt="Refinance"/>
+          <div class="art-cat">REFINANCING</div>
+        </div>
+        <div class="art-body">
+          <h3>When Does It Actually Make Sense to Refinance in 2026?</h3>
+          <p>The old "1% rule" is too simple. Here's the real break-even math, factoring in closing costs and how long you plan to stay.</p>
+          <div class="art-read">Read Guide →</div>
+        </div>
+      </a>
+      <a href="#guides" class="art-card">
+        <div class="art-img">
+          <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=600&q=80&auto=format&fit=crop" alt="Pre-approval"/>
+          <div class="art-cat">PRE-APPROVAL</div>
+        </div>
+        <div class="art-body">
+          <h3>Pre-Qualified vs Pre-Approved: Why It Matters in a Competitive Market</h3>
+          <p>In a multiple-offer situation, a weak pre-qual letter is ignored. Here's what separates a real approval from a soft inquiry.</p>
+          <div class="art-read">Read Guide →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- EBOOK LEAD CAPTURE -->
+<div class="ebook-section section" id="guides">
+  <div class="section-max">
+    <div class="ebook-grid">
+      <div class="ebook-visual">
+        <div class="ebook-bg-img">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700&q=80&auto=format&fit=crop" alt="California home"/>
+        </div>
+        <div class="ebook-float">
+          <div class="ef-eye">Free Download — 2026</div>
+          <h4>California Home Loan Playbook</h4>
+          <ul>
+            <li>Every CA loan type in plain English</li>
+            <li>CalHFA & DPA programs most miss</li>
+            <li>How lenders calculate your max loan</li>
+            <li>Self-employed & investor options</li>
+            <li>7 documents every lender wants</li>
+            <li>Rate lock strategy: when to lock</li>
+            <li>Red flags in loan estimates</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ebook-form-side">
+        <div class="eyebrow">Free Guide</div>
+        <h2 class="ef-head">Get the California Home Loan Playbook — free</h2>
+        <p class="ef-sub">42 pages. Instant download. No lender calls, no credit pull. Just the guide California buyers actually need.</p>
+        <form id="ebookForm" onsubmit="submitEbook(event)">
+          <div class="form-2col">
+            <div class="f-field"><label>First Name</label><input type="text" placeholder="First name" required/></div>
+            <div class="f-field"><label>Last Name</label><input type="text" placeholder="Last name" required/></div>
+          </div>
+          <div class="f-field"><label>Email</label><input type="email" placeholder="you@email.com" required/></div>
+          <div class="f-field"><label>Phone (optional)</label><input type="tel" placeholder="(310) 000-0000"/></div>
+          <div class="f-field">
+            <label>I'm most interested in...</label>
+            <select>
+              <option value="">Select one</option>
+              <option>Buying my first home</option>
+              <option>Buying as an investor / DSCR</option>
+              <option>Refinancing my home</option>
+              <option>Self-employed / bank statement loans</option>
+              <option>Jumbo loans</option>
+              <option>Just learning for now</option>
+            </select>
+          </div>
+          <button type="submit" class="f-submit">Send Me the Free Playbook →</button>
+        </form>
+        <div class="f-success" id="ebookSuccess">✅ <strong>Check your inbox!</strong> The California Home Loan Playbook is on its way. Didn't get it? Check your spam folder.</div>
+        <p class="f-legal">Mettkey is an educational resource — not a lender, broker, or mortgage company. By submitting you agree to receive the requested guide. NMLS #2779492.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="nl-section" id="newsletter">
+  <div class="nl-inner">
+    <div class="eyebrow">Stay Informed</div>
+    <h2 class="nl-h">CA mortgage updates, free</h2>
+    <p class="nl-sub">Weekly rate movements, new CA program announcements, and plain-English breakdowns of what's actually happening in the market. No spam, ever.</p>
+    <div class="nl-form">
+      <input class="nl-input" type="email" placeholder="your@email.com" id="nlEmail"/>
+      <button class="nl-btn" onclick="subscribeNL()">Subscribe Free</button>
+    </div>
+    <p class="nl-note">Unsubscribe anytime. No lender spam. Educational content only.</p>
+    <div class="nl-ok" id="nlOk">✓ Subscribed. First issue coming soon.</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-max">
+    <div class="footer-top">
+      <div>
+        <span class="fb-logo">Mett<span>key</span></span>
+        <p class="fb-about">Mettkey is a California mortgage education and information resource. We help home buyers, first-time buyers, investors, and self-employed borrowers understand their loan options — before they ever talk to a lender. We do not originate loans, take applications, or provide lender-specific rate quotes.</p>
+      </div>
+      <div>
+        <div class="fc-head">Learn</div>
+        <ul class="fc-links">
+          <li><a href="#loans">Loan Types</a></li>
+          <li><a href="#programs">CA Programs</a></li>
+          <li><a href="#calculator">Calculator</a></li>
+          <li><a href="#learn">Articles</a></li>
+          <li><a href="#guides">Free Playbook</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-head">Loan Types</div>
+        <ul class="fc-links">
+          <li><a href="#loans" onclick="showLoan('conventional')">Conventional</a></li>
+          <li><a href="#loans" onclick="showLoan('fha')">FHA</a></li>
+          <li><a href="#loans" onclick="showLoan('va')">VA</a></li>
+          <li><a href="#loans" onclick="showLoan('jumbo')">Jumbo</a></li>
+          <li><a href="#loans" onclick="showLoan('bankstmt')">Bank Statement</a></li>
+          <li><a href="#loans" onclick="showLoan('dscr')">DSCR / Investor</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-head">Topics</div>
+        <ul class="fc-links">
+          <li><a href="#programs">CalHFA Programs</a></li>
+          <li><a href="#calculator">Affordability Calculator</a></li>
+          <li><a href="#learn">Self-Employed Loans</a></li>
+          <li><a href="#learn">First-Time Buyers</a></li>
+          <li><a href="#learn">Investor Guides</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="fb-legal"><strong>Important Disclosures.</strong> Mettkey is not a mortgage lender, mortgage broker, or mortgage company. Information on this site is provided for educational and informational purposes only and does not constitute financial, legal, or lending advice. Mortgage rates shown are for educational reference only — contact a licensed lender for personalized quotes. All loan programs, eligibility requirements, and rates are subject to change without notice. California DRE #02251909 | NMLS #2779492. Equal Housing Opportunity.</div>
+      <div class="fb-nmls">Shiva T. Mettke<br/>NMLS #2779492<br/>CA DRE #02251909<br/>© 2026 Mettkey<br/>Equal Housing Opportunity</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── NAV TABS ──
+function toggleTab(id){
+  const tab=document.getElementById('tab-'+id);
+  const isOpen=tab.classList.contains('open');
+  closeAllTabs();
+  if(!isOpen)tab.classList.add('open');
+}
+function closeAllTabs(){document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('open'))}
+document.addEventListener('click',e=>{if(!e.target.closest('.nav-tab'))closeAllTabs()});
+
+// ── LOAN TABS ──
+function showLoan(type){
+  document.querySelectorAll('.loan-tab-content').forEach(c=>c.classList.remove('active'));
+  document.querySelectorAll('.lt-btn').forEach(b=>b.classList.remove('active'));
+  const el=document.getElementById('loan-'+type);
+  if(el){el.classList.add('active');el.scrollIntoView({behavior:'smooth',block:'nearest'})}
+  const btns={conventional:0,fha:1,va:2,jumbo:3,bankstmt:4,dscr:5,cashout:6,calhfa:7};
+  const idx=btns[type];
+  if(idx!==undefined){const b=document.querySelectorAll('.lt-btn');if(b[idx])b[idx].classList.add('active')}
+}
+
+// ── CALC: PAYMENT ──
+function fmt(n){return n>=1e6?'$'+(n/1e6).toFixed(2)+'M':'$'+Math.round(n).toLocaleString()}
+function pmt(loan,rate,n){const r=rate/100/12;return r===0?loan/n:loan*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1)}
+
+function calcPayment(){
+  const price=+document.getElementById('sl-price').value;
+  const downPct=+document.getElementById('sl-down').value;
+  const rate=+document.getElementById('sl-rate').value;
+  const term=+document.getElementById('sl-term').value;
+  const downAmt=Math.round(price*downPct/100);
+  const loan=price-downAmt;
+  const monthly=pmt(loan,rate,term*12);
+  const taxMo=Math.round(price*0.011/12);
+  document.getElementById('disp-price').textContent=fmt(price);
+  document.getElementById('disp-down').textContent=downPct+'% — '+fmt(downAmt);
+  document.getElementById('disp-rate').textContent=rate.toFixed(2)+'%';
+  document.getElementById('result-payment').textContent=fmt(Math.round(monthly));
+  document.getElementById('r-loan').textContent=fmt(loan);
+  document.getElementById('r-down-amt').textContent=fmt(downAmt);
+  document.getElementById('r-tax').textContent=fmt(taxMo);
+  document.getElementById('r-total').textContent='~'+fmt(Math.round(monthly)+taxMo+150);
+}
+
+// ── CALC: AFFORDABILITY ──
+function calcAfford(){
+  const income=+document.getElementById('sl-income').value;
+  const debts=+document.getElementById('sl-debts').value;
+  const dp=+document.getElementById('sl-dp').value;
+  const rate=+document.getElementById('sl-rate2').value;
+  const maxMonthly=(income/12)*0.43-debts;
+  const loanAmt=maxMonthly>0?Math.round(maxMonthly/(pmt(1,rate,360))):0;
+  const homePrice=Math.max(0,loanAmt+dp);
+  document.getElementById('disp-income').textContent=fmt(income)+'/yr';
+  document.getElementById('disp-debts').textContent=fmt(debts)+'/mo';
+  document.getElementById('disp-dp').textContent=fmt(dp);
+  document.getElementById('disp-rate2').textContent=rate.toFixed(2)+'%';
+  document.getElementById('result-afford').textContent=fmt(homePrice);
+  document.getElementById('ra-loan').textContent=fmt(loanAmt);
+  document.getElementById('ra-piti').textContent=fmt(Math.round(maxMonthly));
+  document.getElementById('ra-income').textContent=fmt(income)+'/yr';
+}
+
+function switchCalc(type,btn){
+  document.querySelectorAll('.calc-tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('calc-payment').style.display=type==='payment'?'block':'none';
+  document.getElementById('calc-afford').style.display=type==='afford'?'block':'none';
+  if(type==='payment')calcPayment();else calcAfford();
+}
+calcPayment();calcAfford();
+
+// ── FORMS ──
+const ZAPIER='https://hooks.zapier.com/hooks/catch/26677674/46tti15/';
+
+function zapSend(data){
+  fetch(ZAPIER,{method:'POST',body:JSON.stringify(data)}).catch(()=>{});
+}
+
+function submitHero(){
+  const name=document.getElementById('heroName').value.trim();
+  const email=document.getElementById('heroEmail').value.trim();
+  const goal=document.getElementById('heroGoal').value;
+  if(!email||!email.includes('@')){alert('Please enter a valid email.');return}
+  zapSend({source:'hero_form',first_name:name,email,goal,page:'mettkey.com'});
+  document.getElementById('heroName').value='';
+  document.getElementById('heroEmail').value='';
+  document.getElementById('heroGoal').value='';
+  alert('✓ Check your inbox, '+(name||'friend')+'! The guide is on its way.');
+}
+
+function submitEbook(e){
+  e.preventDefault();
+  const fields=document.querySelectorAll('#ebookForm input,#ebookForm select');
+  const data={source:'ebook_form',page:'mettkey.com'};
+  const labels=['first_name','last_name','email','phone','interest'];
+  fields.forEach((f,i)=>{data[labels[i]||'field_'+i]=f.value});
+  zapSend(data);
+  document.getElementById('ebookForm').style.display='none';
+  document.getElementById('ebookSuccess').style.display='block';
+}
+
+function subscribeNL(){
+  const email=document.getElementById('nlEmail').value.trim();
+  if(!email||!email.includes('@')){alert('Please enter a valid email.');return}
+  zapSend({source:'newsletter',email,page:'mettkey.com'});
+  document.getElementById('nlEmail').value='';
+  document.getElementById('nlOk').style.display='block';
+}
+
+function submitPopup(){
+  const fields=document.querySelectorAll('#popupForm input');
+  const data={source:'popup_form',page:'mettkey.com'};
+  fields.forEach(f=>{data[f.type==='email'?'email':'first_name']=f.value});
+  zapSend(data);
+  document.getElementById('popupForm').style.display='none';
+  document.getElementById('popupSuccess').style.display='block';
+  setTimeout(closePopup,2500);
+}
+
+// ── POPUP ──
+function closePopup(){document.getElementById('popup').classList.remove('show')}
+let popupShown=false;
+function showPopup(){if(!popupShown){popupShown=true;document.getElementById('popup').classList.add('show')}}
+// Exit intent
+document.addEventListener('mouseleave',e=>{if(e.clientY<=0)showPopup()});
+// Time-based fallback (45 sec)
+setTimeout(showPopup,45000);
+</script>
+</body>
+</html>
