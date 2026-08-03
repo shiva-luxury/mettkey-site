@@ -19,6 +19,7 @@ export default function EbookForm() {
   const [phone, setPhone] = useState('')
   const [interest, setInterest] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [coverMissing, setCoverMissing] = useState(false)
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -32,7 +33,18 @@ export default function EbookForm() {
         <div className="guide">
           <div className="guide-l">
             <span className="g-ey">Free Download — 2026</span>
-            <h2>California Home Loan Playbook</h2>
+            {!coverMissing ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src="/ebook-cover.png"
+                alt="California Home Loan Playbook cover"
+                className="guide-cover"
+                onError={() => setCoverMissing(true)}
+              />
+            ) : (
+              <div className="guide-cover guide-cover-placeholder">Drop ebook-cover.png into /public</div>
+            )}
+            <h2>Your Free Guide to California Home Loans</h2>
             <ul className="guide-list">
               <li>Every CA loan type in plain English</li>
               <li>CalHFA &amp; programs most buyers miss</li>
@@ -43,11 +55,11 @@ export default function EbookForm() {
               <li>Red flags in your Loan Estimate to never ignore</li>
               <li>Full mortgage glossary — 28 terms defined</li>
             </ul>
-            <div className="guide-meta">42 pages · PDF · Instant Download · 100% Free</div>
+            <div className="guide-meta">PDF · Instant Download · 100% Free</div>
           </div>
           <div className="guide-r">
             <h3>Get your free copy</h3>
-            <p>No lender calls. No credit pull. Just the guide California buyers actually need.</p>
+            <p>No lender calls. Just the guide California buyers actually need.</p>
             {!submitted ? (
               <form id="ebookForm" onSubmit={onSubmit}>
                 <div className="f2">
@@ -66,7 +78,7 @@ export default function EbookForm() {
                 <button type="submit" className="f-btn">Send Me the Free Playbook →</button>
               </form>
             ) : (
-              <div className="f-ok show">✅ <strong>Check your inbox!</strong> The California Home Loan Playbook is on its way.</div>
+              <div className="f-ok show">✅ <strong>Check your inbox!</strong> The California Home Loan Playbook is on its way. For informational purposes only. Not an offer to lend.</div>
             )}
             <p className="f-disc">Mettkey is an educational resource — not a lender, broker, or mortgage company. NMLS #2779492 | Shiva T. Mettke.</p>
           </div>

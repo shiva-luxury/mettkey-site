@@ -42,7 +42,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     publisher: { '@type': 'Organization', name: 'Mettkey' },
     mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
     isFamilyFriendly: true,
-    about: 'California mortgage guide',
+    about: 'California mortgage resource',
     genre: 'Educational',
   }
 

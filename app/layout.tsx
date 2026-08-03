@@ -9,7 +9,7 @@ import { SITE_URL, BRAND, NMLS } from '../lib/constants'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', weight: ['300', '400', '500', '600', '700', '800'] })
 const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces', weight: ['600', '700'], style: ['normal', 'italic'] })
 
-const HOME_TITLE = `${BRAND} — California Mortgage Guide`
+const HOME_TITLE = `${BRAND} — California Mortgage Resource`
 const HOME_DESCRIPTION = `Your portal to California mortgage information, market trends, and loan programs for home buyers, investors, and self-employed borrowers. ${NMLS}`
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description: HOME_DESCRIPTION,
   keywords: [
-    'California mortgage guide',
+    'California mortgage resource',
     'California mortgage rates',
     'bank statement loan California',
     'DSCR loan California',
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: BRAND,
     title: HOME_TITLE,
-    description: 'Your portal to California mortgage information and market trends — for home buyers, first-time buyers, self-employed borrowers, and investors. Not a lender — informational only.',
+    description: 'Your California mortgage resource — information and market trends for home buyers, first-time buyers, self-employed borrowers, and investors. Not a lender — informational only.',
     url: SITE_URL,
     images: [`${SITE_URL}/og-image.jpg`],
   },
   twitter: {
     card: 'summary_large_image',
     title: HOME_TITLE,
-    description: 'Your portal to California mortgage information and market trends — for home buyers, first-time buyers, self-employed borrowers, and investors.',
+    description: 'Your California mortgage resource — information and market trends for home buyers, first-time buyers, self-employed borrowers, and investors.',
     images: [`${SITE_URL}/og-image.jpg`],
   },
   alternates: { canonical: '/' },
@@ -52,7 +52,7 @@ const FINANCIAL_SERVICE_SCHEMA = {
   '@type': 'FinancialService',
   name: 'Mettkey',
   url: 'https://mettkey.com/',
-  description: 'California mortgage guide and information resource — your portal to loan programs and market trends. Not a lender, broker, or mortgage company — for educational purposes only.',
+  description: 'California mortgage resource — information on loan programs and market trends. Not a lender, broker, or mortgage company — for informational purposes only.',
   areaServed: { '@type': 'State', name: 'California' },
   employee: {
     '@type': 'Person',

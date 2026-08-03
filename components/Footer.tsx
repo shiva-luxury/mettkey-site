@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="ft-top">
         <div>
           <span className="ft-logo">Mett<span>key</span></span>
-          <p className="ft-about">California mortgage guide and information resource — your portal to loan programs and market trends. Helping home buyers, investors, and self-employed borrowers understand their loan options before they ever talk to a lender. We do not originate loans or take applications.</p>
+          <p className="ft-about">California mortgage resource — information on loan programs and market trends. Helping home buyers, investors, and self-employed borrowers understand their loan options before they ever talk to a lender. We do not originate loans or take applications.</p>
         </div>
         <div>
           <div className="ft-h">Learn</div>

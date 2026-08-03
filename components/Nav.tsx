@@ -6,6 +6,7 @@ import { requestShowTab } from '../lib/tabEvents'
 
 export default function Nav() {
   const [open, setOpen] = useState<string | null>(null)
+  const [logoMissing, setLogoMissing] = useState(false)
   const rootRef = useRef<HTMLDivElement>(null)
 
   const toggle = (id: string) => setOpen((cur) => (cur === id ? null : id))
@@ -28,7 +29,19 @@ export default function Nav() {
     <div className="nav-wrap" ref={rootRef}>
       <nav>
         <a href="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-          <Image src="/logo.png" alt="Mettkey" width={35} height={40} style={{ height: 40, width: 'auto' }} priority />
+          {!logoMissing ? (
+            <Image
+              src="/logo.png"
+              alt="Mettkey"
+              width={35}
+              height={40}
+              style={{ height: 40, width: 'auto' }}
+              priority
+              onError={() => setLogoMissing(true)}
+            />
+          ) : (
+            <>Mett<span>key</span></>
+          )}
         </a>
         <div className="nav-items">
 
@@ -68,10 +81,11 @@ export default function Nav() {
           <div className="ni"><a href="/#learn">Learn</a></div>
           <div className="ni"><a href="/market-trends">Market Trends</a></div>
           <div className="ni"><a href="/blog">Blog</a></div>
+          <div className="ni"><a href="/#guides">Free Guide</a></div>
 
         </div>
         <div className="nav-r">
-          <a href="/guide" className="btn btn-outline">Free Guide</a>
+          <a href="/#guides" className="btn btn-outline">Free Guide</a>
           <a href="/#guides" className="btn btn-gold">Get Started</a>
         </div>
       </nav>

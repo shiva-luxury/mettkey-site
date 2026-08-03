@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { BRAND } from '../../lib/constants'
 import BlogGrid from './BlogGrid'
 
-const BLOG_INDEX_TITLE = 'Blog — California Mortgage Guide'
+const BLOG_INDEX_TITLE = 'Blog — California Mortgage Resource'
 const BLOG_INDEX_DESCRIPTION = `Plain-English guides on California mortgage rates, loan types, and down payment programs from ${BRAND}. Informational only — not a lender.`
 
 export const metadata: Metadata = {

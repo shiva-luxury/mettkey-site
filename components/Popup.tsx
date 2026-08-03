@@ -60,22 +60,22 @@ export default function Popup() {
           <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80&auto=format&fit=crop" alt="California home" />
           <div className="pop-ov"></div>
           <div className="pop-txt">
-            <h3>Free: CA Loan Playbook 2026</h3>
-            <p>42 pages · instant download · no credit pull</p>
+            <h3>Stay Ahead of the Market</h3>
+            <p>Free — unsubscribe anytime</p>
           </div>
           <button className="pop-close" onClick={() => setClosed(true)}>✕</button>
         </div>
         <div className="pop-body">
-          <p>Get the free guide California buyers use to understand their loan options before talking to any lender.</p>
+          <p>Sign up for market updates, mortgage news and rate alerts.</p>
           {!submitted ? (
             <div className="pop-form">
-              <input type="text" placeholder="First name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-              <input type="text" placeholder="Last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-              <input type="email" placeholder="Email address" value={email} onChange={(e) => setEmail(e.target.value)} />
-              <button onClick={submit}>Send Me the Free Guide →</button>
+              <input type="text" placeholder="First name" required value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+              <input type="text" placeholder="Last name" required value={lastName} onChange={(e) => setLastName(e.target.value)} />
+              <input type="email" placeholder="Email address" required value={email} onChange={(e) => setEmail(e.target.value)} />
+              <button onClick={submit}>Sign Me Up →</button>
             </div>
           ) : (
-            <div className="pop-ok show">✓ On its way to your inbox!</div>
+            <div className="pop-ok show">✓ You&apos;re signed up! For informational purposes only. Not an offer to lend.</div>
           )}
           <p className="pop-disc" style={{ fontSize: '.66rem', color: 'var(--ink4)', marginTop: 10, lineHeight: 1.5 }}>
             Mettkey is an educational resource, not a lender, broker, or mortgage company. NMLS #2779492 | CA DRE #02251909.
