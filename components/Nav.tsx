@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import { requestShowTab } from '../lib/tabEvents'
 
@@ -26,7 +27,9 @@ export default function Nav() {
   return (
     <div className="nav-wrap" ref={rootRef}>
       <nav>
-        <a href="/" className="logo">Mett<span>key</span></a>
+        <a href="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+          <Image src="/logo.png" alt="Mettkey" width={35} height={40} style={{ height: 40, width: 'auto' }} priority />
+        </a>
         <div className="nav-items">
 
           <div className={`ni${open === 'buy' ? ' open' : ''}`}>
