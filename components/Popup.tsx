@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { zap } from '../lib/webhook'
 
 const SESSION_KEY = 'mettkey_popup_shown'
-const DELAY_MS = 50000
+const DELAY_MS = 8000
 
 export default function Popup() {
   const [visible, setVisible] = useState(false)
