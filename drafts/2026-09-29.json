@@ -1,0 +1,388 @@
+{
+  "date": "2026-09-29",
+  "topic": "Why did mortgage rates go up this week in California",
+  "generatedAt": "2026-09-29T14:22:47.119Z",
+  "blog": {
+    "type": "blog",
+    "status": "pending",
+    "complianceFlags": [],
+    "data": {
+      "slug": "why-did-mortgage-rates-go-up-this-week-in-california-understanding-the-forces-be",
+      "title": "Why Did Mortgage Rates Go Up This Week in California? Understanding the Forces Behind the Shift",
+      "metaTitle": "Why California Mortgage Rates Rose This Week",
+      "metaDescription": "Curious why California mortgage rates ticked up this week? Learn the economic forces behind rate movement in this educational guide from Mettkey.",
+      "keyword": "why did mortgage rates go up this week California",
+      "category": "Rates",
+      "excerpt": "Mortgage rates rarely move for just one reason. Here's an educational breakdown of the economic forces that typically push California rates higher in any given week.",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80&auto=format&fit=crop",
+      "body": [
+        "If you've been watching mortgage listings or checking in with a loan officer this week and noticed the numbers looking a little higher than before, you're not imagining things. Mortgage rates in California — like everywhere else in the country — are not set by a single lender or state agency. They shift in response to a web of national and global financial signals, and even small changes in those signals can nudge the average rate a buyer sees up or down within days.",
+        "One of the biggest drivers behind short-term rate movement is the bond market, specifically the yield on the 10-year Treasury note. Mortgage rates tend to track this yield fairly closely because mortgage-backed securities compete with Treasury bonds for investor dollars. When investors expect stronger economic growth, higher inflation, or increased government borrowing, Treasury yields often rise — and mortgage rates frequently follow. This week's uptick may reflect exactly that kind of shift in investor expectations, even if the underlying economic data itself wasn't dramatic.",
+        "Inflation data and Federal Reserve commentary also play an outsized role. While the Fed doesn't directly set mortgage rates, its policy decisions and public statements about future rate moves influence how investors price long-term debt, including mortgages. If a recent inflation report came in hotter than expected, or if Fed officials signaled that rate cuts may be delayed, markets often react quickly — sometimes before the ink is dry on the announcement. That reaction can ripple into the rates California lenders are quoting borrowers within the same week.",
+        "California's housing market has its own local pressures that can compound national trends. High home prices across much of the state mean that even a modest rate increase can meaningfully change a borrower's estimated monthly payment, which sometimes affects buyer demand and, in turn, how aggressively lenders price their loan offerings. Additionally, statewide housing inventory levels, seasonal buying patterns, and regional economic conditions in job hubs like the Bay Area, Los Angeles, and San Diego can all interact with national rate trends in ways that are unique to California borrowers.",
+        "It's also worth remembering that the rate you see in a headline or a rate-tracking chart is typically an average — actual rates offered to individual borrowers vary based on credit profile, down payment, loan type, property type, and the specific lender being consulted. Two people shopping for a mortgage in California during the very same week could be quoted noticeably different rates based on their financial picture. This is why understanding the general forces behind rate movement is useful, but it shouldn't be mistaken for a prediction of what any one borrower will actually be offered.",
+        "For Californians trying to make sense of a volatile rate environment, the most productive approach is usually to focus on education rather than trying to time the market perfectly — since even experienced economists frequently disagree about where rates are headed next. Understanding why rates move can help you evaluate loan offers with more confidence, ask better questions, and recognize that week-to-week fluctuations are a normal part of the mortgage landscape rather than a sign that today's rate is either a guaranteed deal or guaranteed to disappear tomorrow. Educational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke."
+      ],
+      "internalLinks": [
+        {
+          "label": "How Mortgage Rates Are Determined",
+          "href": "/#guides"
+        },
+        {
+          "label": "Understanding the 10-Year Treasury and Mortgage Rates",
+          "href": "/#guides"
+        },
+        {
+          "label": "California Home Buying Basics",
+          "href": "/#guides"
+        },
+        {
+          "label": "How to Read a Loan Estimate",
+          "href": "/#guides"
+        }
+      ]
+    }
+  },
+  "videos": [
+    {
+      "type": "video",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "topic": "Why did mortgage rates go up this week in California",
+        "hooks": [
+          "Rates jumped this week and everyone's blaming the wrong thing.",
+          "If you think the Fed sets your mortgage rate, watch this.",
+          "Myth: your lender just 'raised rates' because they felt like it.",
+          "California buyers are asking why rates spiked — here's the real reason.",
+          "Stop blaming your loan officer for rate moves they don't control."
+        ],
+        "chosenHookIndex": 0,
+        "format": "Myth Busting",
+        "segments": [
+          {
+            "timestamp": "0:00-0:05",
+            "label": "Hook",
+            "content": "[Fast cut: phone showing a rate alert notification, then a confused homebuyer face] Rates jumped this week and everyone's blaming the wrong thing."
+          },
+          {
+            "timestamp": "0:05-0:15",
+            "label": "State the myth",
+            "content": "[Text overlay pops: 'MYTH'] A lot of people think mortgage rates move because a bank or lender just decides to raise them. That's not really how it works."
+          },
+          {
+            "timestamp": "0:15-0:30",
+            "label": "Reveal the truth",
+            "content": "[Cut to B-roll of a laptop showing a bond/Treasury yield chart] Mortgage rates are closely tied to the bond market — especially the 10-year Treasury yield and mortgage-backed securities. When investors get nervous about inflation, jobs data, or Fed signals, bond yields move, and mortgage rates tend to follow."
+          },
+          {
+            "timestamp": "0:30-0:45",
+            "label": "Why this week specifically",
+            "content": "[B-roll: newsroom-style graphic of economic data headlines] This week, new economic data came out that shifted expectations — and lenders repriced their rate sheets to reflect that shift. It's not personal, and it's not random — it's markets reacting in real time."
+          },
+          {
+            "timestamp": "0:45-0:55",
+            "label": "What this means for CA buyers",
+            "content": "[Shot of a California suburban street, sunny, palm trees] For California buyers, this means rates can move day to day, sometimes hour to hour, and no two lenders will quote the exact same number since programs and pricing vary."
+          },
+          {
+            "timestamp": "0:55-1:05",
+            "label": "CTA",
+            "content": "[Close on Mettkey logo/website on screen] Want to actually understand what moves your rate before you shop for a loan? Head to mettkey.com to learn how it all works."
+          }
+        ],
+        "onScreenText": [
+          "0:02 — 'MYTH: Lenders just raise rates'",
+          "0:16 — 'Bond market drives mortgage rates'",
+          "0:31 — 'New data = repriced rate sheets'",
+          "0:48 — 'Rates vary by lender & borrower'"
+        ],
+        "audioStyleSuggestion": "Modern minimal trap-pop beat, punchy and a little tense at the start, resolves into a clean confident tone at the reveal — no vocals.",
+        "brollShotList": [
+          "Close-up of phone screen with a rate-alert push notification",
+          "Laptop screen showing a stock/bond yield line chart trending upward",
+          "Newsroom-style motion graphic with headline text about inflation/jobs data",
+          "Aerial or street-level shot of a California suburban neighborhood with palm trees",
+          "Close-up of hands typing on a calculator next to loan paperwork",
+          "Slow pan across a modern California home exterior at golden hour"
+        ],
+        "cta": "Want to actually understand what moves your rate before you shop for a loan? Visit mettkey.com to learn how it all works.",
+        "heygenScript": "Rates jumped this week and everyone's blaming the wrong thing. A lot of people think mortgage rates move because a bank or lender just decides to raise them. That's not really how it works. Mortgage rates are closely tied to the bond market — especially the 10-year Treasury yield and mortgage-backed securities. When investors get nervous about inflation, jobs data, or Fed signals, bond yields move, and mortgage rates tend to follow. This week, new economic data came out that shifted expectations, and lenders repriced their rate sheets to reflect that shift. It's not personal, and it's not random — it's markets reacting in real time. For California buyers, this means rates can move day to day, sometimes hour to hour, and no two lenders will quote the exact same number since programs and pricing vary. Want to actually understand what moves your rate before you shop for a loan? Head to mettkey.com to learn how it all works.",
+        "capcutNotes": "[0:00-0:05] Hook shot: phone rate alert + confused face\n[0:02] Text: 'MYTH: Lenders just raise rates'\n[0:05-0:15] MYTH text overlay pop-in\n[0:15-0:30] Bond chart B-roll\n[0:16] Text: 'Bond market drives mortgage rates'\n[0:30-0:45] Economic headline graphic\n[0:31] Text: 'New data = repriced rate sheets'\n[0:45-0:55] CA neighborhood B-roll\n[0:48] Text: 'Rates vary by lender & borrower'\n[0:55-1:05] Mettkey logo/website CTA card"
+      }
+    },
+    {
+      "type": "video",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "topic": "Why did mortgage rates go up this week in California",
+        "hooks": [
+          "\"Why did my rate quote change since last week?\" Let's answer that.",
+          "Q: My rate went up overnight — what happened? A: Keep watching.",
+          "You asked why California rates spiked this week — here's the answer.",
+          "\"Did the Fed raise rates again?\" Not quite — here's what actually happened.",
+          "Real question from a viewer: why do rates move without warning?"
+        ],
+        "chosenHookIndex": 0,
+        "format": "Q&A",
+        "segments": [
+          {
+            "timestamp": "0:00-0:06",
+            "label": "Hook / Question setup",
+            "content": "[Text bubble graphic mimicking a DM] 'Why did my rate quote change since last week?' Let's answer that."
+          },
+          {
+            "timestamp": "0:06-0:18",
+            "label": "Answer part 1: bond market basics",
+            "content": "[Host on camera, casual setting] Great question. Mortgage rates aren't set in a vacuum — they closely track movements in the bond market, particularly mortgage-backed securities and the 10-year Treasury yield."
+          },
+          {
+            "timestamp": "0:18-0:32",
+            "label": "Answer part 2: this week's driver",
+            "content": "[Cut to B-roll: financial news ticker graphic] This week, fresh inflation or jobs data likely came in different than investors expected. When that happens, investors reassess risk, bond prices shift, and mortgage rates typically adjust in response — sometimes within the same day."
+          },
+          {
+            "timestamp": "0:32-0:45",
+            "label": "Answer part 3: why quotes differ",
+            "content": "[B-roll: two phones side by side showing different rate quotes] That's also why the rate you saw from one lender might differ from another — pricing, borrower profile, loan type, and timing all factor in. There's no single 'the rate' for everyone."
+          },
+          {
+            "timestamp": "0:45-0:58",
+            "label": "Practical takeaway",
+            "content": "[Host back on camera] The takeaway: rate swings like this week's aren't a sign something's wrong — it's just how the market works. Understanding that helps you make sense of quotes instead of panicking over them."
+          },
+          {
+            "timestamp": "0:58-1:08",
+            "label": "CTA",
+            "content": "[Website graphic on screen] Got more questions about how rates move? Go learn more at mettkey.com — we break it all down."
+          }
+        ],
+        "onScreenText": [
+          "0:00 — 'Q: Why did my rate change?'",
+          "0:07 — 'Rates track the bond market'",
+          "0:19 — 'New data shifts investor risk'",
+          "0:33 — 'Quotes vary by lender & borrower'",
+          "0:46 — 'Not wrong — just how markets work'"
+        ],
+        "audioStyleSuggestion": "Chill conversational podcast-style background bed, soft synth pads, low-key and informative, no big drops — supports a talking-head Q&A tone.",
+        "brollShotList": [
+          "Stylized text-message/DM bubble graphic on phone screen",
+          "Financial news ticker/graphic with scrolling economic headlines",
+          "Two smartphones side-by-side displaying different rate percentages",
+          "Close-up of a calculator and mortgage worksheet on a desk",
+          "Wide shot of a California city skyline (e.g., LA or San Francisco) at dusk",
+          "Close-up of a hand scrolling through a rate comparison website"
+        ],
+        "cta": "Got more questions about how rates move? Go learn more at mettkey.com — we break it all down.",
+        "heygenScript": "'Why did my rate quote change since last week?' Let's answer that. Great question. Mortgage rates aren't set in a vacuum — they closely track movements in the bond market, particularly mortgage-backed securities and the 10-year Treasury yield. This week, fresh inflation or jobs data likely came in different than investors expected. When that happens, investors reassess risk, bond prices shift, and mortgage rates typically adjust in response — sometimes within the same day. That's also why the rate you saw from one lender might differ from another — pricing, borrower profile, loan type, and timing all factor in. There's no single 'the rate' for everyone. The takeaway: rate swings like this week's aren't a sign something's wrong — it's just how the market works. Understanding that helps you make sense of quotes instead of panicking over them. Got more questions about how rates move? Go learn more at mettkey.com — we break it all down.",
+        "capcutNotes": "[0:00-0:06] DM bubble graphic hook\n[0:00] Text: 'Q: Why did my rate change?'\n[0:06-0:18] Host talking-head segment\n[0:07] Text: 'Rates track the bond market'\n[0:18-0:32] News ticker B-roll\n[0:19] Text: 'New data shifts investor risk'\n[0:32-0:45] Two-phone comparison B-roll\n[0:33] Text: 'Quotes vary by lender & borrower'\n[0:45-0:58] Host talking-head close\n[0:46] Text: 'Not wrong — just how markets work'\n[0:58-1:08] Mettkey.com CTA card"
+      }
+    },
+    {
+      "type": "video",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "topic": "Why did mortgage rates go up this week in California",
+        "hooks": [
+          "Here's the exact chain reaction behind this week's rate move.",
+          "Three things quietly pushed California mortgage rates up this week.",
+          "Rates didn't move randomly — here's the domino effect.",
+          "From Wall Street to your rate sheet: how this week's spike happened.",
+          "This is the simple chain that explains rate changes every single week."
+        ],
+        "chosenHookIndex": 0,
+        "format": "Straight Explainer",
+        "segments": [
+          {
+            "timestamp": "0:00-0:06",
+            "label": "Hook",
+            "content": "[Fast zoom into a bond yield chart, then cut to a California home] Here's the exact chain reaction behind this week's rate move."
+          },
+          {
+            "timestamp": "0:06-0:18",
+            "label": "Step 1: economic data",
+            "content": "[Graphic: 'STEP 1' with icon of a report/document] It starts with economic data — things like inflation reports, jobs numbers, or Fed commentary. When these come in stronger or weaker than expected, investors adjust their outlook fast."
+          },
+          {
+            "timestamp": "0:18-0:30",
+            "label": "Step 2: bond market reaction",
+            "content": "[Graphic: 'STEP 2' with animated bond/treasury icon] That shift moves bond yields — especially the 10-year Treasury and mortgage-backed securities, which mortgage rates are priced off of. When yields rise, mortgage rates generally rise too."
+          },
+          {
+            "timestamp": "0:30-0:42",
+            "label": "Step 3: lenders reprice",
+            "content": "[Graphic: 'STEP 3' with icon of a rate sheet/document stack] Lenders across California then reprice their rate sheets, sometimes multiple times a day, to stay aligned with where the market actually is."
+          },
+          {
+            "timestamp": "0:42-0:54",
+            "label": "What it means for you",
+            "content": "[B-roll: California home with 'for sale' feel, buyer walking up] For someone shopping for a home loan, that means the number you see today could look different tomorrow — and that's normal, not a red flag."
+          },
+          {
+            "timestamp": "0:54-1:05",
+            "label": "CTA",
+            "content": "[Website graphic, clean end card] If you want to actually understand how rates are built before you start shopping, learn more at mettkey.com."
+          }
+        ],
+        "onScreenText": [
+          "0:07 — 'STEP 1: Economic Data'",
+          "0:19 — 'STEP 2: Bond Yields Move'",
+          "0:31 — 'STEP 3: Lenders Reprice'",
+          "0:43 — 'Rates change daily — that's normal'"
+        ],
+        "audioStyleSuggestion": "Clean, driving corporate-explainer instrumental with a light build on each 'step' reveal — think confident, informative, mid-tempo electronic.",
+        "brollShotList": [
+          "Zoomed animated graphic of a rising bond yield line chart",
+          "Wide establishing shot of a California home exterior, modern architecture",
+          "Close-up of a printed economic report or jobs data headline on a tablet",
+          "Office B-roll of hands adjusting numbers on a rate sheet document",
+          "Buyer walking toward a front door with a 'for sale' sign nearby (no brokerage branding)",
+          "Clean animated end-card graphic with mettkey.com website"
+        ],
+        "cta": "If you want to actually understand how rates are built before you start shopping, learn more at mettkey.com.",
+        "heygenScript": "Here's the exact chain reaction behind this week's rate move. It starts with economic data — things like inflation reports, jobs numbers, or Fed commentary. When these come in stronger or weaker than expected, investors adjust their outlook fast. That shift moves bond yields — especially the 10-year Treasury and mortgage-backed securities, which mortgage rates are priced off of. When yields rise, mortgage rates generally rise too. Lenders across California then reprice their rate sheets, sometimes multiple times a day, to stay aligned with where the market actually is. For someone shopping for a home loan, that means the number you see today could look different tomorrow — and that's normal, not a red flag. If you want to actually understand how rates are built before you start shopping, learn more at mettkey.com.",
+        "capcutNotes": "[0:00-0:06] Bond chart zoom + CA home hook shot\n[0:06-0:18] STEP 1 graphic\n[0:07] Text: 'STEP 1: Economic Data'\n[0:18-0:30] STEP 2 graphic\n[0:19] Text: 'STEP 2: Bond Yields Move'\n[0:30-0:42] STEP 3 graphic\n[0:31] Text: 'STEP 3: Lenders Reprice'\n[0:42-0:54] CA home / buyer B-roll\n[0:43] Text: 'Rates change daily — that's normal'\n[0:54-1:05] Mettkey.com end card"
+      }
+    }
+  ],
+  "socials": [
+    {
+      "type": "social",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "platform": "Instagram",
+        "caption": "Rates moving again this week? You're not imagining it 👀 Mortgage rates aren't set by one lender flipping a switch — they shift with bond market activity, inflation reports, Federal Reserve signals, and investor demand for mortgage-backed securities. When inflation data comes in hotter than expected or the bond market gets jumpy, lenders often adjust pricing to manage risk. California's housing market adds its own layer too, with local demand and inventory playing a role. The takeaway: rates aren't random, but they're also not guaranteed to move the way headlines predict. If you're planning a purchase or refi, understanding these forces (instead of chasing a number) helps you make smarter decisions. Rates vary by lender and borrower profile, so always compare and ask questions. Educational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke.",
+        "hashtags": [
+          "#MortgageRates",
+          "#CaliforniaMortgage",
+          "#MortgageEducation",
+          "#HomeBuyingTips",
+          "#RealEstateFinance",
+          "#InterestRates",
+          "#CAHousingMarket",
+          "#FirstTimeHomebuyer",
+          "#MortgageTips101",
+          "#FederalReserve",
+          "#BondMarket",
+          "#HomeLoanBasics",
+          "#Mettkey",
+          "#PersonalFinance"
+        ]
+      }
+    },
+    {
+      "type": "social",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "platform": "LinkedIn",
+        "caption": "Why did mortgage rates move this week in California? It's a question we hear often, and the answer usually isn't one single cause — it's a combination of macroeconomic signals.\n\nMortgage rates are closely tied to the bond market, particularly the 10-year Treasury yield, which reacts to inflation data, employment reports, and Federal Reserve commentary on monetary policy. When inflation expectations rise or economic data suggests stronger growth than anticipated, investors often demand higher yields on bonds, and mortgage-backed securities typically follow suit — which can push rates upward.\n\nAt the state level, California's housing market dynamics (inventory levels, buyer demand, and regional economic conditions) can also influence how lenders price risk, though these effects tend to be more incremental than the broader national trends.\n\nFor borrowers, the key insight isn't trying to \"time\" the market perfectly — it's understanding the forces at play so you can make informed decisions about when and how to move forward with financing. Rates and terms vary significantly by lender, credit profile, and loan program, so working with knowledgeable professionals and asking the right questions matters more than chasing a headline number.\n\nAt Mettkey, our goal is to help Californians build that understanding before they ever sit down with a lender.\n\nEducational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke.",
+        "hashtags": [
+          "#MortgageEducation",
+          "#CaliforniaRealEstate",
+          "#InterestRates",
+          "#HousingMarket",
+          "#FinancialLiteracy"
+        ]
+      }
+    },
+    {
+      "type": "social",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "platform": "Facebook",
+        "caption": "Noticed mortgage rates ticking up this week? You're not alone in wondering why 🤔 Rates move based on things like inflation reports, Federal Reserve updates, and activity in the bond market — not just what one lender decides. Add in California's local housing demand, and you get a mix of factors that can shift week to week.\n\nThe good news: understanding *why* rates move can help you feel more confident about your homebuying or refinancing timeline, instead of just watching the numbers and stressing out.\n\nAs always, rates and terms vary by lender and borrower, so it's worth doing your homework before making a decision. We're here to help break it all down 👇\n\nEducational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke.",
+        "hashtags": [
+          "#MortgageEducation",
+          "#CaliforniaHomes",
+          "#MettkeyTips"
+        ]
+      }
+    }
+  ],
+  "newsletter": {
+    "type": "newsletter",
+    "status": "pending",
+    "complianceFlags": [],
+    "data": {
+      "subjectLines": [
+        "Why Did Mortgage Rates Go Up This Week in California?",
+        "California Mortgage Rates: This Week's Movement Explained",
+        "What's Behind This Week's Rate Changes in California?"
+      ],
+      "preheader": "A quick look at the economic factors that can move California mortgage rates week to week.",
+      "bodyHtml": "<h2>Why Did Mortgage Rates Go Up This Week in California?</h2><p>If you've been watching mortgage rates in California this week, you may have noticed some upward movement. Mortgage rates are shaped by a mix of national and global factors, and they can shift from week to week — sometimes even day to day. Here's a plain-language look at what typically drives these changes, so you can better understand the bigger picture as you think about your own homebuying or refinancing timeline.</p><h2>Common Factors That Can Push Rates Higher</h2><ul><li><strong>Inflation data:</strong> When inflation reports come in higher than expected, lenders often adjust rates upward to protect their returns over time.</li><li><strong>Federal Reserve signals:</strong> While the Fed doesn't set mortgage rates directly, its comments on future policy can influence investor expectations and bond yields, which mortgage rates tend to follow.</li><li><strong>Treasury yields:</strong> Mortgage rates often move in the same direction as the 10-year Treasury yield. When yields rise, mortgage rates frequently rise too.</li><li><strong>Economic strength:</strong> Strong jobs reports or GDP growth can suggest a healthy economy, which sometimes leads to higher rates as investors expect the Fed to hold or raise short-term rates.</li><li><strong>Global market events:</strong> International economic news, geopolitical developments, and shifts in investor sentiment can all ripple into the U.S. bond market and, in turn, mortgage rates.</li></ul><h2>What This Might Mean for California Borrowers</h2><p>Because rates vary by lender, loan type, and borrower profile, it's hard to say exactly how any single week's movement will affect your personal options. Some borrowers may see more noticeable changes depending on their credit profile, down payment, or the type of loan program they're considering. Typical programs may include conventional, FHA, VA, and jumbo loans — each with its own way of responding to broader rate trends.</p><p>If you're planning to buy a home or refinance in California, it can help to stay informed about these trends rather than trying to time the market perfectly. Rates are influenced by many moving parts, and no one — including us — can predict with certainty where they'll go next.</p><h2>Mettkey Is Here to Help You Understand, Not Sell You a Loan</h2><p>Mettkey is an educational platform designed to help Californians make sense of mortgage rates, loan programs, and the homebuying process. We don't originate, fund, underwrite, or approve loans — our goal is simply to help you feel more confident and informed as you explore your options with a licensed lender or broker.</p><p><em>Educational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke.</em></p>"
+    }
+  },
+  "carousel": {
+    "type": "carousel",
+    "status": "pending",
+    "complianceFlags": [],
+    "data": {
+      "slides": [
+        {
+          "headline": "Rates Moved This Week — Here's Why",
+          "body": "Mortgage rates in California shifted again, leaving many buyers wondering what's driving the change. Let's break down the typical forces behind weekly rate swings."
+        },
+        {
+          "headline": "The Bond Market Sets the Tone",
+          "body": "Mortgage rates generally track the 10-year Treasury yield, not the Fed's rate directly. When bond yields rise, mortgage rates often follow — and vice versa."
+        },
+        {
+          "headline": "Inflation Data Plays a Big Role",
+          "body": "New inflation reports can shift investor expectations overnight. Hotter-than-expected inflation numbers tend to push rates higher as investors demand more yield."
+        },
+        {
+          "headline": "Fed Signals Matter, Even Without Action",
+          "body": "Even when the Federal Reserve doesn't change its benchmark rate, comments about future policy can move markets. Hints at future hikes or holds can ripple into mortgage pricing."
+        },
+        {
+          "headline": "Economic Reports Add Volatility",
+          "body": "Jobs reports, GDP data, and consumer spending numbers all factor into investor sentiment. Stronger-than-expected economic data can sometimes push rates up as growth expectations shift."
+        },
+        {
+          "headline": "California's Housing Demand Adds Local Nuance",
+          "body": "High demand and limited inventory in many California markets can influence lender pricing strategies, though rates still vary by lender, loan type, and borrower profile."
+        },
+        {
+          "headline": "Stay Informed, Not Overwhelmed",
+          "body": "Understanding these factors helps you make sense of rate headlines — but actual rates and terms depend on your unique financial picture and chosen lender. Mettkey is here to help you learn, not to lend.\n\nEducational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke."
+        }
+      ],
+      "caption": "Ever wonder why mortgage rates seem to jump around week to week? 📈 It's rarely just one thing — bond markets, inflation data, Fed commentary, and even local housing demand all play a part. Swipe through to learn what typically moves the needle on California mortgage rates, and why your actual rate will always depend on your lender and financial profile. Educational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke."
+    }
+  },
+  "controversial": [
+    {
+      "type": "controversial",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "hook": "Myth: Your bank sets your mortgage rate.",
+        "body": "Mortgage rates are primarily driven by the bond market — especially mortgage-backed securities and the 10-year Treasury yield — not by an individual bank's whim. The Fed influences short-term borrowing costs, but it doesn't directly set 30-year fixed mortgage rates, which is why rates can rise even when the Fed holds steady. Your specific rate also reflects your credit profile, loan type, and lender margin, so quotes can vary meaningfully even during the same 'rate environment.' Educational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke."
+      }
+    },
+    {
+      "type": "controversial",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "hook": "Myth: You need 20% down to buy a home in California.",
+        "body": "The 20%-down rule is a common misconception — many conventional loans allow as little as 3-5% down, and FHA and VA programs (for eligible borrowers) can go lower or require none in the VA's case. Putting down less than 20% typically means paying private mortgage insurance (PMI) until sufficient equity is built, which is a tradeoff, not a dealbreaker. What down payment makes sense depends on your finances, loan program, and long-term goals — details a licensed loan officer can walk through with you directly. Educational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke."
+      }
+    },
+    {
+      "type": "controversial",
+      "status": "pending",
+      "complianceFlags": [],
+      "data": {
+        "hook": "Myth: If rates went up this week, you already missed your window to buy.",
+        "body": "Mortgage rates move daily and weekly based on economic data, inflation reports, and investor sentiment — a single week's uptick doesn't mean the 'best time' has permanently passed. Trying to perfectly time the market is notoriously difficult even for professionals, since rates are influenced by dozens of shifting factors at once. What actually determines your affordability is your specific debt-to-income ratio, credit profile, and loan program — not just the headline rate of the week. Educational purposes only. Mettkey is not a lender or broker. NMLS #2779492 | Shiva T. Mettke."
+      }
+    }
+  ]
+}
